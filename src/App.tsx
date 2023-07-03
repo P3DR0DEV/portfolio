@@ -5,11 +5,11 @@ export function App() {
   return (
     <main id="container" className="bg-[#1d1d1d] text-white">
       <div className="bg-[#4a5568]">
-        <div>
+        <div className="flex flex-col items-center">
           <img
             src="https://avatars.githubusercontent.com/u/98365194?s=400&u=f423bb737769760c21b39a2e46cd0f1778698b7b&v=4"
             alt="Profile Pic"
-            className="w-full"
+            className="rounded-full h-60 mt-6"
           />
           <h1 className="text-3xl text-center py-5">
             Hi, i'm Pedro Mendes! 👋
