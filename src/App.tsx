@@ -1,3 +1,3 @@
 export function App() {
-  return <p>Pedro Dev</p>
+  return <p className="text-2xl">Pedro Dev</p>
 }
