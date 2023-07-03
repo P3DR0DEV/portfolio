@@ -1,3 +1,30 @@
+import { About, Footer, Projects, Skills } from "./Components"
+import { data } from "./util"
+
 export function App() {
-  return <p className="text-2xl">Pedro Dev</p>
+  return (
+    <main id="container" className="bg-[#1d1d1d] text-white">
+      <div className="bg-[#4a5568]">
+        <div>
+          <img
+            src="https://avatars.githubusercontent.com/u/98365194?s=400&u=f423bb737769760c21b39a2e46cd0f1778698b7b&v=4"
+            alt="Profile Pic"
+            className="w-full"
+          />
+          <h1 className="text-3xl text-center py-5">
+            Hi, i'm Pedro Mendes! 👋
+          </h1>
+        </div>
+        <About />
+        <div className="p-5">
+          <h2 className="text-xl">Tecnologies:</h2>
+          {data.map((skill) => {
+            return <Skills skill={skill} />
+          })}
+        </div>
+      </div>
+      <Projects />
+      <Footer />
+    </main>
+  )
 }
