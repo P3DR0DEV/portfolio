@@ -21,7 +21,7 @@ export function About() {
           <li>My first Programming Language was Python.</li>
           <li>
             I have begin to learn JavaScript because some friends told me to do
-            it, and now i love TypeScript
+            it, and now i'm in love with TypeScript
           </li>
           <li>
             I can't see myself without programming, it's my job and my hobby
