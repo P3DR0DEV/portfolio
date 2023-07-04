@@ -13,7 +13,7 @@ export function About() {
       <div className="px-5">
         <ul className="list-disc">
           <li>
-            When i made my first web-site i was 14 years old, a his purpose was
+            I was 14 years old when i made my first web-site, a his purpose was
             to ask a girl if she accept to be my girlfriend (she diverted to
             like me a lot, because even after having seen that horrible thing
             she accepted it.)
