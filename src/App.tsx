@@ -18,9 +18,11 @@ export function App() {
         <About />
         <div className="p-5">
           <h2 className="text-xl">Tecnologies:</h2>
-          {data.map((skill) => {
-            return <Skills skill={skill} />
-          })}
+          <div className="flex overflow-x-auto flex-nowrap gap-5 items-center">
+            {data.map((skill) => {
+              return <Skills skill={skill} />
+            })}
+          </div>
         </div>
       </div>
       <Projects />
