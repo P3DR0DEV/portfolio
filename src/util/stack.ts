@@ -24,7 +24,7 @@ export const data: IData[] = [
     lang: [
       { name: "TypeScript", skill: 3 },
       { name: "JavaScript", skill: 3 },
-      { name: "Python", skill: 2 },
+      { name: "Python", skill: 1 },
     ],
   },
   {
@@ -47,6 +47,11 @@ export const data: IData[] = [
         name: "Vercel",
         skill: 1,
       },
+      {
+        name: "Linux",
+        skill: 3,
+      },
+      { name: "Git", skill: 2 },
     ],
   },
 ]
