@@ -2,11 +2,11 @@ import { IData } from "@/types"
 
 export function Skills({ skill }: { skill: IData }) {
   return (
-    <div className="bg-[#e2e8f0] h-96 rounded-md text-[#4a5568] min-w-full">
+    <div className="bg-[#e2e8f0] h-96 rounded-md text-[#4a5568] min-w-full  overflow-auto">
       <h3 className="text-center text-2xl capitalize  font-bold py-2">
         {skill.title}
       </h3>
-      <div className="p-3 overflow-auto">
+      <div className="p-3">
         {skill.lang.map((skill) => {
           return (
             <div
