@@ -13,8 +13,8 @@ export function About() {
       <div className="px-5">
         <ul className="list-disc">
           <li>
-            I was 14 years old when i made my first web-site, a his purpose was
-            to ask a girl if she accept to be my girlfriend.
+            I was 14 years old when i made my first web-site, and its purpose
+            was to ask a girl if she accept to be my girlfriend.
           </li>
           <li>My first Programming Language was Python.</li>
           <li>
@@ -24,7 +24,7 @@ export function About() {
           <li>
             I can't see myself without programming, it's my job and my hobby.
           </li>
-          <li>Now a days i build my web apps with React TSX and Node.</li>
+          <li>Nowadays i build my web apps with React TSX and Node.</li>
         </ul>
       </div>
     </section>
