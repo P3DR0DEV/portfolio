@@ -20,7 +20,7 @@ export function App() {
           <h2 className="text-xl">Tecnologies:</h2>
           <div className="flex overflow-x-auto mt-3 flex-nowrap gap-5 items-center snap-x snap-mandatory">
             {data.map((skill) => {
-              return <Skills skill={skill} />
+              return <Skills key={skill.title} skill={skill} />
             })}
           </div>
         </div>
