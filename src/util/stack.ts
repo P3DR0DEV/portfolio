@@ -1,4 +1,4 @@
-import { IData } from "@/types"
+import { IData, ProjectBody } from "@/types"
 
 export const data: IData[] = [
   {
@@ -52,6 +52,58 @@ export const data: IData[] = [
         skill: 3,
       },
       { name: "Git", skill: 2 },
+    ],
+  },
+]
+
+export const projectsData: ProjectBody[] = [
+  {
+    id: 1,
+    ProjectName: "Estoque BHO",
+    images: [
+      "/estoque/login-estoque.png",
+      "/estoque/products.png",
+      "/estoque/estoque-novo.png",
+      "/estoque/estoque-update.png",
+    ],
+    description: [
+      "Web Application built to keep track of what the company have in they storage.",
+      "Each product can be updated by adding, subtracting, or removing from the storage, directed to another department or section, and deleted. ",
+      "It was build using TSX (React with TypeScript) and TailwindCSS, NodeJs (Express) and PostgreSQL with Prisma ORM.",
+    ],
+  },
+  {
+    id: 2,
+    ProjectName: "Student's Report",
+    images: [
+      "/relatorios/relatorios.png",
+      "/estoque/relatorios-turma.png",
+      "/estoque/relatorio.png",
+    ],
+    description: [
+      "Web Application built to simplify the process of generating patternized PDF student reports each semester, thus improving teacher efficiency and saving time since it was used to build 300+ reports.",
+      "Each student can be updated by changing name and his number, removing from class, update the report, etc. ",
+      "It was build using TSX (React with TypeScript), NodeJs (Express) and MYSQL with Sequelize ORM.",
+    ],
+  },
+  {
+    id: 3,
+    ProjectName: "Student's Report",
+    images: ["/log/log-login.png", "/log/log.png"],
+    description: [
+      "Web Application built to safeguard the company against potential cybercrimes by maintaining essential guest user details.",
+      "In the 1.0 version it was build using NodeJS (Express) and EJS (View Engine) and MariaDB",
+      "To enhance performance, system security and code readability in the version 2.0 I splitted the monolith to a front-end TSX (React with TypeScript) and the back-end NodeJs (Express) and MariaDB with Sequelize ORM.",
+    ],
+  },
+  {
+    id: 4,
+    ProjectName: "ToDo List",
+    images: ["/todo/todo-cleared.png", "/todo/todo.png"],
+    description: [
+      "This was my first Web App built using ReactJS and i use it a lot to remind me of what I have to do.",
+      "It is a simple todo list built with react and typescript but since it was my first app I have affection for him",
+      "That's when I started to get angry with typescript",
     ],
   },
 ]
