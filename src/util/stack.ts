@@ -59,7 +59,7 @@ export const data: IData[] = [
 export const projectsData: ProjectBody[] = [
   {
     id: 1,
-    ProjectName: "Estoque BHO",
+    ProjectName: "Storage BHO",
     images: [
       "/estoque/login-estoque.png",
       "/estoque/products.png",
