@@ -13,8 +13,8 @@ export function ProjectCard({
 
   //TODO Make the images component
   return (
-    <div className={`bg-[#262626] px-3 py-1 rounded-md`}>
-      <h1 className="text-2xl font-bold">{ProjectName}</h1>
+    <div className={`bg-[#262626] px-3 py-3 rounded-md`}>
+      <h1 className="text-2xl font-bold md:text-center">{ProjectName}</h1>
       <div
         className={`flex flex-col  md:flex md:${align} md:justify-between md:gap-3`}
       >
