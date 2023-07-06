@@ -88,11 +88,11 @@ export const projectsData: ProjectBody[] = [
   },
   {
     id: 3,
-    ProjectName: "Student's Report",
+    ProjectName: "Web Monitoring Platform",
     images: ["/log/log-login.png", "/log/log.png"],
     description: [
       "Web Application built to safeguard the company against potential cybercrimes by maintaining essential guest user details.",
-      "In the 1.0 version it was build using NodeJS (Express) and EJS (View Engine) and MariaDB",
+      "In the 1.0 version it was built using NodeJS (Express) and EJS (View Engine) and MariaDB",
       "To enhance performance, system security and code readability in the version 2.0 I splitted the monolith to a front-end TSX (React with TypeScript) and the back-end NodeJs (Express) and MariaDB with Sequelize ORM.",
     ],
   },
