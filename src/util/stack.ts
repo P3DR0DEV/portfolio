@@ -77,8 +77,8 @@ export const projectsData: ProjectBody[] = [
     ProjectName: "Student's Report",
     images: [
       "/relatorios/relatorios.png",
-      "/estoque/relatorios-turma.png",
-      "/estoque/relatorio.png",
+      "/relatorios/relatorios-turma.png",
+      "/relatorios/relatorio.png",
     ],
     description: [
       "Web Application built to simplify the process of generating patternized PDF student reports each semester, thus improving teacher efficiency and saving time since it was used to build 300+ reports.",
