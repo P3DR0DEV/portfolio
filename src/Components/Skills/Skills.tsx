@@ -2,7 +2,7 @@ import { IData } from "@/types"
 
 export function Skills({ skill }: { skill: IData }) {
   return (
-    <div className="bg-[#e2e8f0] h-96 rounded-md text-[#4a5568] min-w-full  overflow-auto snap-center">
+    <div className="bg-[#e2e8f0] h-96 rounded-md text-[#4a5568] min-w-full md:min-w-[32%]  overflow-auto snap-center">
       <h3 className="text-center text-2xl capitalize  font-bold py-2">
         {skill.title}
       </h3>
