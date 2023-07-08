@@ -69,7 +69,7 @@ export const projectsData: ProjectBody[] = [
     description: [
       "Web Application built to keep track of what the company have in they storage.",
       "Each product can be updated by adding, subtracting, or removing from the storage, directed to another department or section, and deleted. ",
-      "It was build using TSX (React with TypeScript) and TailwindCSS, NodeJs (Express) and PostgreSQL with Prisma ORM.",
+      "It was built using TSX (React with TypeScript) and TailwindCSS, NodeJs (Express) and PostgreSQL with Prisma ORM.",
     ],
   },
   {
@@ -81,9 +81,9 @@ export const projectsData: ProjectBody[] = [
       "/relatorios/relatorio.png",
     ],
     description: [
-      "Web Application built to simplify the process of generating patternized PDF student reports each semester, thus improving teacher efficiency and saving time since it was used to build 300+ reports.",
+      "Web Application built to simplify the process of generating patternized PDF student reports each semester, thus improving teacher efficiency and saving time since it was used to generate 300+ reports.",
       "Each student can be updated by changing name and his number, removing from class, update the report, etc. ",
-      "It was build using TSX (React with TypeScript), NodeJs (Express) and MYSQL with Sequelize ORM.",
+      "It was built using TSX (React with TypeScript), NodeJs (Express) and MYSQL with Sequelize ORM.",
     ],
   },
   {
