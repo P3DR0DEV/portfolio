@@ -12,7 +12,6 @@ export function ProjectCard({
   images,
   isOdd,
 }: ProjectBodyProps) {
-  //TODO Make the images component
   const [currentIndex, setCurrentIndex] = useState<number>(0)
 
   function prevSlide(e: MouseEvent) {
