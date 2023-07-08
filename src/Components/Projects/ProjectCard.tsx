@@ -49,12 +49,14 @@ export function ProjectCard({
             className="rounded-md duration-500"
           />
 
-          <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-3 text-2xl rounded-full bg-black/20 text-white cursor-pointer">
+          <div className="md:hidden md:group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-3 text-2xl rounded-full bg-black/20 text-white cursor-pointer">
             <BsChevronCompactLeft onClick={prevSlide} size={30} />
           </div>
-          <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-3 text-2xl rounded-full bg-black/20 text-white cursor-pointer">
+
+          <div className="md:hidden md:group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-3 text-2xl rounded-full bg-black/20 text-white cursor-pointer">
             <BsChevronCompactRight onClick={nextSlide} size={30} />
           </div>
+
           <div className="flex top-4 justify-center py-2">
             {images.map((slide, index) => (
               <div
