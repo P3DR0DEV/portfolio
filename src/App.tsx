@@ -1,34 +1,24 @@
-import { About, Footer, Projects, Skills } from "./Components"
-import { data } from "./util"
+import { Projects, SectionDivisor } from "./Components"
 
 export function App() {
   return (
-    <main id="container" className="bg-[#1d1d1d] text-white">
-      <div className="bg-[#4a5568]">
-        <div className="max-w-screen-xl m-auto">
-          <div className="flex flex-col items-center">
-            <img
-              src="https://avatars.githubusercontent.com/u/98365194?s=400&u=f423bb737769760c21b39a2e46cd0f1778698b7b&v=4"
-              alt="Profile Pic"
-              className="rounded-full h-60 mt-6"
-            />
-            <h1 className="text-3xl text-center py-5">
-              Hi, i'm Pedro Mendes! 👋
-            </h1>
-          </div>
-          <About />
-          <div className="p-5">
-            <h2 className="text-xl">Tecnologies:</h2>
-            <div className="flex overflow-x-auto mt-3 flex-nowrap gap-5 items-center snap-x snap-mandatory">
-              {data.map((skill) => {
-                return <Skills key={skill.title} skill={skill} />
-              })}
-            </div>
-          </div>
+    <main id="container" className="">
+      <div className="max-w-screen-xl m-auto">
+        <div className="flex flex-col items-center gap-4">
+          <img
+            src="https://avatars.githubusercontent.com/u/98365194?s=400&u=f423bb737769760c21b39a2e46cd0f1778698b7b&v=4"
+            alt="Profile Pic"
+            className="rounded-full h-40 mt-6"
+          />
+          <h1 className="text-4xl text-center">Hi, i'm Pedro Mendes! 👋</h1>
+          <h3 className="text-lg">
+            I'm a Full Stack Developer based in Belo Horizonte, Brazil.
+          </h3>
         </div>
+        <SectionDivisor sectionName="WORK" />
+        <Projects />
+        <SectionDivisor sectionName="ABOUT" />
       </div>
-      <Projects />
-      <Footer />
     </main>
   )
 }
