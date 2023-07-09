@@ -11,6 +11,7 @@ export function ProjectCard({
   description,
   images,
   isOdd,
+  skills,
 }: ProjectBodyProps) {
   const [currentIndex, setCurrentIndex] = useState<number>(0)
 
@@ -32,45 +33,57 @@ export function ProjectCard({
     setCurrentIndex(index)
   }
   return (
-    <div className={`bg-[#262626] px-3 py-2 rounded-md`}>
-      <h1 className="text-2xl font-bold text-center py-4">{ProjectName}</h1>
-      <div
-        className={
-          isOdd
-            ? `flex flex-col md:flex-row md:justify-between md:gap-7`
-            : `flex flex-col md:flex-row-reverse md:justify-between md:gap-7`
-        }
-      >
-        <div className="md:self-start self-center relative group">
-          <img
-            src={images[currentIndex]}
-            alt=""
-            className="rounded-md duration-500"
-          />
+    <div
+      className={
+        isOdd
+          ? `flex flex-col md:flex-row md:justify-between md:gap-7`
+          : `flex flex-col md:flex-row-reverse md:justify-between md:gap-7`
+      }
+    >
+      <div className="md:self-start self-center relative group">
+        <img
+          src={images[currentIndex]}
+          alt=""
+          className="rounded-lg duration-500 border border-black/20"
+        />
 
-          <div className="md:hidden md:group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-3 text-2xl rounded-full bg-black/20 text-white cursor-pointer">
-            <BsChevronCompactLeft onClick={prevSlide} size={30} />
-          </div>
-
-          <div className="md:hidden md:group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-3 text-2xl rounded-full bg-black/20 text-white cursor-pointer">
-            <BsChevronCompactRight onClick={nextSlide} size={30} />
-          </div>
-
-          <div className="flex top-4 justify-center py-2">
-            {images.map((slide, index) => (
-              <div
-                key={slide}
-                onClick={() => goToSlide(index)}
-                className="text-2xl cursor-pointer"
-              >
-                <RxDotFilled />
-              </div>
-            ))}
-          </div>
+        <div className="md:hidden md:group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-3 text-2xl rounded-full bg-black/20 text-white cursor-pointer">
+          <BsChevronCompactLeft onClick={prevSlide} size={30} />
         </div>
-        <div className="md:max-w-[40%] text-justify flex flex-col gap-3 mt-3">
+
+        <div className="md:hidden md:group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-3 text-2xl rounded-full bg-black/20 text-white cursor-pointer">
+          <BsChevronCompactRight onClick={nextSlide} size={30} />
+        </div>
+
+        <div className="flex justify-center py-2">
+          {images.map((slide, index) => (
+            <div
+              key={slide}
+              onClick={() => goToSlide(index)}
+              className="text-2xl cursor-pointer"
+            >
+              <RxDotFilled />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="md:max-w-[40%] text-justify flex flex-col gap-2 justify-between py-3">
+        <div className="gap-3 flex flex-col">
+          <h3 className="text-3xl font-bold">{ProjectName}</h3>
           {description.map((text) => (
-            <p key={text}>{text}</p>
+            <p key={text} className="text-xl text-[#747474] ">
+              {text}
+            </p>
+          ))}
+        </div>
+        <div className="flex gap-4">
+          {skills.map((tag) => (
+            <p
+              key={tag}
+              className="px-4 py-2 border border-[#284B63] text-[#284B63] rounded-full cursor-pointer"
+            >
+              {tag}
+            </p>
           ))}
         </div>
       </div>
