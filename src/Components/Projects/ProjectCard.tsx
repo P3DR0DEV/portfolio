@@ -67,7 +67,7 @@ export function ProjectCard({
           ))}
         </div>
       </div>
-      <div className="md:max-w-[40%] text-justify flex flex-col gap-2 justify-between py-3">
+      <div className="md:max-w-[40%] text-justify flex flex-col gap-2 justify-around ">
         <div className="gap-3 flex flex-col">
           <h3 className="text-3xl font-bold">{ProjectName}</h3>
           {description.map((text) => (
