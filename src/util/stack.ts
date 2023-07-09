@@ -71,6 +71,7 @@ export const projectsData: ProjectBody[] = [
       "Each product can be updated by adding, subtracting, or removing from the storage, directed to another department or section, and deleted. ",
       "It was built using TSX (React with TypeScript) and TailwindCSS, NodeJs (Express) and PostgreSQL with Prisma ORM.",
     ],
+    skills: ["Node.js", "React", "Tailwind CSS", "PostgreSQL"],
   },
   {
     id: 2,
@@ -85,6 +86,7 @@ export const projectsData: ProjectBody[] = [
       "Each student can be updated by changing name and his number, removing from class, update the report, etc. ",
       "It was built using TSX (React with TypeScript), NodeJs (Express) and MYSQL with Sequelize ORM.",
     ],
+    skills: ["Node.js", "React", "MySQL"],
   },
   {
     id: 3,
@@ -95,6 +97,7 @@ export const projectsData: ProjectBody[] = [
       "In the 1.0 version it was built using NodeJS (Express) and EJS (View Engine) and MariaDB",
       "To enhance performance, system security and code readability in the version 2.0 I splitted the monolith to a front-end TSX (React with TypeScript) and the back-end NodeJs (Express) and MariaDB with Sequelize ORM.",
     ],
+    skills: ["Node.js", "React", "MongoDB"],
   },
   {
     id: 4,
@@ -105,5 +108,6 @@ export const projectsData: ProjectBody[] = [
       "It is a simple todo list built with react and typescript but since it was my first app I have affection for him",
       "That's when I started to get angry with typescript",
     ],
+    skills: ["React", "TypeScript"],
   },
 ]

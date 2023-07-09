@@ -14,4 +14,5 @@ export interface ProjectBody {
   ProjectName: string
   images: Image[]
   description: string[]
+  skills: string[]
 }
