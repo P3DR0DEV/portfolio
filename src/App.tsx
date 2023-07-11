@@ -1,4 +1,5 @@
-import { Projects, SectionDivisor } from "./Components"
+import { About, Footer, Projects, SectionDivisor, Skills } from "./Components"
+import { data } from "./util"
 
 export function App() {
   return (
@@ -18,7 +19,15 @@ export function App() {
         <SectionDivisor sectionName="WORK" />
         <Projects />
         <SectionDivisor sectionName="ABOUT" />
+        <About />
+        <SectionDivisor sectionName="TECNOLOGIES" />
+        <div className="flex overflow-x-auto mt-3 flex-nowrap gap-5 items-center snap-x snap-mandatory">
+          {data.map((skill) => (
+            <Skills skill={skill} key={skill.title} />
+          ))}
+        </div>
       </div>
+      <Footer />
     </main>
   )
 }

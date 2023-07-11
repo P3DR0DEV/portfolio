@@ -80,7 +80,7 @@ export function ProjectCard({
           {skills.map((tag) => (
             <p
               key={tag}
-              className="px-4 py-2 border border-[#284B63] text-[#284B63] rounded-full cursor-pointer"
+              className="px-4 py-2 border border-[#284B63] text-[#284B63] rounded-full"
             >
               {tag}
             </p>
