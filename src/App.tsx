@@ -1,4 +1,5 @@
 import { About, Footer, Projects, Skills } from "./Components"
+
 import { data } from "./util"
 
 export function App() {
@@ -18,7 +19,7 @@ export function App() {
           </div>
           <About />
           <div className="p-5">
-            <h2 className="text-xl">Tecnologies:</h2>
+            <h2 className="text-xl">Technologies:</h2>
             <div className="flex overflow-x-auto mt-3 flex-nowrap gap-5 items-center snap-x snap-mandatory">
               {data.map((skill) => {
                 return <Skills key={skill.title} skill={skill} />
