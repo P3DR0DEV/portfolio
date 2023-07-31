@@ -5,7 +5,7 @@ export function Projects() {
   return (
     <div className="max-w-screen-xl m-auto">
       <section className="p-5">
-        <h2 className="text-lg mb-2">My Projects</h2>
+        <h2 className="text-2xl mb-2">My Projects</h2>
         <div className="flex flex-col gap-4">
           {projectsData.map((project) => (
             <ProjectCard
