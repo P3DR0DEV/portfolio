@@ -1,9 +1,16 @@
-import { Splide, SplideSlide } from "@splidejs/react-splide"
+import "keen-slider/keen-slider.min.css"
+import { useKeenSlider } from "keen-slider/react"
 import { About, Footer, Projects, Skills } from "./Components"
 
 import { data } from "./util"
 
 export function App() {
+  const [sliderRef] = useKeenSlider({
+    breakpoints: {
+      "(min-width: 600px)": { slides: { perView: 2, spacing: 16 } },
+      "(min-width: 1000px)": { slides: { perView: 3, spacing: 16 } },
+    },
+  })
   return (
     <main id="container" className="bg-[#1d1d1d] text-white">
       <div className="bg-[#4a5568]">
@@ -21,29 +28,15 @@ export function App() {
           <About />
           <div className="p-5">
             <h2 className="text-xl">Technologies:</h2>
-            <Splide
-              className="p-0"
-              id="splider-custom"
-              options={{
-                rewind: true,
-                speed: 1000,
-                perPage: 3,
-                gap: 16,
-                arrows: false,
-                breakpoints: {
-                  900: { perPage: 2 },
-                  600: { perPage: 1 },
-                },
-              }}
-            >
+            <div ref={sliderRef} className="keen-slider">
               {data.map((skill) => {
                 return (
-                  <SplideSlide>
+                  <div className="keen-slider__slide">
                     <Skills key={skill.title} skill={skill} />
-                  </SplideSlide>
+                  </div>
                 )
               })}
-            </Splide>
+            </div>
           </div>
         </div>
       </div>
