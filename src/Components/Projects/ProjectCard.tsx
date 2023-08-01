@@ -21,7 +21,7 @@ export function ProjectCard({
             : `flex flex-col md:flex-row-reverse md:justify-between md:gap-7`
         }
       >
-        <div className="md:max-w-[60%]">
+        <div className="xl:w-[729px] md:w-[600px]">
           <Carousel images={images} />
         </div>
         <div className="md:max-w-[40%] text-justify flex flex-col gap-3 mt-3">

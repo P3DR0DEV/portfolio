@@ -26,7 +26,11 @@ function Arrow(props: {
   )
 }
 
-export function Carousel({ images }: { images: string[] }) {
+interface CarouselProps {
+  images: string[]
+}
+
+export function Carousel({ images }: CarouselProps) {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [loaded, setLoaded] = useState(false)
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
