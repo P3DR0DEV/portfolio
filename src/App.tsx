@@ -1,3 +1,4 @@
+import { Splide, SplideSlide } from "@splidejs/react-splide"
 import { About, Footer, Projects, Skills } from "./Components"
 
 import { data } from "./util"
@@ -20,11 +21,29 @@ export function App() {
           <About />
           <div className="p-5">
             <h2 className="text-xl">Technologies:</h2>
-            <div className="flex overflow-x-auto mt-3 flex-nowrap gap-5 items-center snap-x snap-mandatory">
+            <Splide
+              className="p-0"
+              id="splider-custom"
+              options={{
+                rewind: true,
+                speed: 1000,
+                perPage: 3,
+                gap: 16,
+                arrows: false,
+                breakpoints: {
+                  900: { perPage: 2 },
+                  600: { perPage: 1 },
+                },
+              }}
+            >
               {data.map((skill) => {
-                return <Skills key={skill.title} skill={skill} />
+                return (
+                  <SplideSlide>
+                    <Skills key={skill.title} skill={skill} />
+                  </SplideSlide>
+                )
               })}
-            </div>
+            </Splide>
           </div>
         </div>
       </div>

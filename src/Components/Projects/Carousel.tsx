@@ -5,8 +5,9 @@ export function Carousel({ images }: { images: string[] }) {
   return (
     <Splide
       style={{ padding: 0 }}
-      options={{ rewind: true }}
+      options={{ rewind: true, arrows: false }}
       aria-label="Project Images"
+      id="splider-custom"
     >
       {images.map((image) => (
         <SplideSlide>
