@@ -58,6 +58,24 @@ export const data: IData[] = [
 
 export const projectsData: ProjectBody[] = [
   {
+    id: 0,
+    ProjectName: "BHO Shopping",
+    images: [
+      "/compras/login.png",
+      "/compras/novacompra.png",
+      "/compras/minhascompras.png",
+      "/compras/aprovadas.png",
+      "/compras/admview.png",
+      "/compras/update.png",
+    ],
+    description: [
+      "Web Application built to make a simple way to request, approve or reject a purchase.",
+      "Each purchase can be updated, rejected, approved.",
+      "It was built using TSX (React with TypeScript) and TailwindCSS, NodeJs(Express) and PostgreSQL with Prisma ORM.",
+      "In the server i used a different approach, it was my first time building a backend with clean achitecture, and tests.",
+    ],
+  },
+  {
     id: 1,
     ProjectName: "Storage BHO",
     images: [
