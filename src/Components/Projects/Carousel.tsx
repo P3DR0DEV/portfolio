@@ -48,7 +48,11 @@ export function Carousel({ images }: CarouselProps) {
       <div className="navigation-wrapper">
         <div ref={sliderRef} className="keen-slider">
           {images.map((image) => (
-            <img className="keen-slider__slide" src={image} />
+            <img
+              className="rounded-lg keen-slider__slide"
+              alt="image group from projects"
+              src={image}
+            />
           ))}
         </div>
         {loaded && instanceRef.current && (
