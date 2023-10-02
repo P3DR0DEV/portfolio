@@ -11,7 +11,7 @@ export function Divisor() {
 
 export function Footer() {
   return (
-    <footer className="flex flex-col w-full items-center py-3 bg-[#161619] mt-8 gap-3">
+    <footer className="flex flex-col w-full items-center py-3 mt-8 gap-3">
       <div id="buttons" className="flex gap-5 justify-center items-center mt-4">
         <a target="_blank" href="https://www.instagram.com/pedro_camposm">
           <FaInstagramSquare className="text-[#918E9B] text-5xl" />
@@ -26,7 +26,7 @@ export function Footer() {
           <FaTwitterSquare className="text-[#918E9B] text-5xl" />
         </a>
       </div>
-      <small className="text-sm text-white">&copy; Pedro Mendes, 2023</small>
+      <small className="text-sm ">&copy; Pedro Mendes, 2023</small>
     </footer>
   )
 }

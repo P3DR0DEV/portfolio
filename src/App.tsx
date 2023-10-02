@@ -1,7 +1,15 @@
+import "keen-slider/keen-slider.min.css"
+import { useKeenSlider } from "keen-slider/react"
 import { About, Footer, Projects, SectionDivisor, Skills } from "./Components"
 import { data } from "./util"
 
 export function App() {
+  const [sliderRef] = useKeenSlider({
+    breakpoints: {
+      "(min-width: 600px)": { slides: { perView: 2, spacing: 16 } },
+      "(min-width: 1000px)": { slides: { perView: 3, spacing: 16 } },
+    },
+  })
   return (
     <main id="container" className="">
       <div className="max-w-screen-xl m-auto">
@@ -21,9 +29,11 @@ export function App() {
         <SectionDivisor sectionName="ABOUT" />
         <About />
         <SectionDivisor sectionName="TECNOLOGIES" />
-        <div className="flex overflow-x-auto mt-3 flex-nowrap gap-5 items-center snap-x snap-mandatory">
+        <div ref={sliderRef} className="keen-slider">
           {data.map((skill) => (
-            <Skills skill={skill} key={skill.title} />
+            <div className="keen-slider__slide">
+              <Skills skill={skill} key={skill.title} />
+            </div>
           ))}
         </div>
       </div>
