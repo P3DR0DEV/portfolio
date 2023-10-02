@@ -4,7 +4,7 @@ import {
   FaLinkedin,
   FaTwitterSquare,
 } from "react-icons/fa"
-
+import { FaSquareEnvelope } from "react-icons/fa6"
 export function Divisor() {
   return <div className="border border-solid border-white w-full"></div>
 }
@@ -24,6 +24,9 @@ export function Footer() {
         </a>
         <a target="_blank" href="https://www.twitter.com/esquilolo">
           <FaTwitterSquare className="text-[#918E9B] text-5xl hover:text-[#1DA1F2]" />
+        </a>
+        <a target="_blank" href="mailto:pedrohenriquecamposmendes@hotmail.com">
+          <FaSquareEnvelope className="text-[#918E9B] text-5xl hover:text-[#EA4335]" />
         </a>
       </div>
       <small className="text-sm ">&copy; Pedro Mendes, 2023</small>
