@@ -51,7 +51,14 @@ export const data: IData[] = [
         name: "Linux",
         skill: 3,
       },
-      { name: "Git", skill: 2 },
+      {
+        name: "Git",
+        skill: 2,
+      },
+      {
+        name: "Nvim",
+        skill: 3,
+      },
     ],
   },
 ]
