@@ -20,7 +20,7 @@ export function App() {
             className="rounded-full h-40 mt-6"
           />
           <h1 className="text-4xl text-center">Hi, i'm Pedro Mendes! 👋</h1>
-          <h3 className="text-lg">
+          <h3 className="text-lg text-center">
             I'm a Full Stack Developer based in Belo Horizonte, Brazil.
           </h3>
         </div>
