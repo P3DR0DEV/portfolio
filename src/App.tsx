@@ -33,6 +33,7 @@ export function App() {
           {data.map((skill) => (
             <div className="keen-slider__slide">
               <Skills skill={skill} key={skill.title} />
+
             </div>
           ))}
         </div>
