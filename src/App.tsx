@@ -20,9 +20,9 @@ export function App() {
             className="rounded-full h-40 mt-6"
           />
           <h1 className="text-4xl text-center">Hi, i'm Pedro Mendes! 👋</h1>
-          <h3 className="text-lg text-center">
+          <h2 className="text-lg text-center">
             I'm a Full Stack Developer based in Belo Horizonte, Brazil.
-          </h3>
+          </h2>
         </div>
         <SectionDivisor sectionName="WORK" />
         <Projects />
@@ -31,9 +31,8 @@ export function App() {
         <SectionDivisor sectionName="TECNOLOGIES" />
         <div ref={sliderRef} className="keen-slider">
           {data.map((skill) => (
-            <div className="keen-slider__slide">
+            <div className="keen-slider__slide" key={skill.title}>
               <Skills skill={skill} key={skill.title} />
-
             </div>
           ))}
         </div>

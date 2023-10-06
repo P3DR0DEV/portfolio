@@ -50,7 +50,7 @@ export function Carousel({ images }: CarouselProps) {
           {images.map((image) => (
             <img
               key={image}
-              className="rounded-lg keen-slider__slide"
+              className="rounded-lg keen-slider__slide aspect-auto object-cover"
               alt="image group from projects"
               src={image}
             />
@@ -84,7 +84,10 @@ export function Carousel({ images }: CarouselProps) {
             ].map((idx) => {
               return (
                 <button
+                  role="button"
+                  aria-label="navigation dots"
                   key={idx}
+                  title={String(currentSlide)}
                   onClick={() => {
                     instanceRef.current?.moveToIdx(idx)
                   }}
