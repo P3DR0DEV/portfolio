@@ -49,6 +49,7 @@ export function Carousel({ images }: CarouselProps) {
         <div ref={sliderRef} className="keen-slider">
           {images.map((image) => (
             <img
+              key={image}
               className="rounded-lg keen-slider__slide"
               alt="image group from projects"
               src={image}

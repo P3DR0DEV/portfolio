@@ -57,7 +57,7 @@ export const data: IData[] = [
       },
       {
         name: "Nvim",
-        skill: 3,
+        skill: 2,
       },
     ],
   },
@@ -78,8 +78,16 @@ export const projectsData: ProjectBody[] = [
     description: [
       "Web Application built to make a simple way to request, approve or reject a purchase.",
       "Each purchase can be updated, rejected, approved.",
-      "It was built using TSX (React with TypeScript) and TailwindCSS, NodeJs(Express) and PostgreSQL with Prisma ORM.",
-      "In the server i used a different approach, it was my first time building a backend with clean achitecture using in memory and databases repositories, and tests.",
+      "It was built using TSX and TailwindCSS, NodeJs and PostgreSQL with Prisma ORM.",
+      "It was my first time building a backend with Clean-Arch using in memory and databases repositories, and tests.",
+    ],
+    skills: [
+      "Node.js",
+      "React",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "JEST",
+      "Clean Architecture",
     ],
   },
   {
@@ -93,9 +101,9 @@ export const projectsData: ProjectBody[] = [
     ],
     description: [
       "Web Application built to keep track of what the company have in they storage.",
-      "Each product can be updated by adding, subtracting, or removing from the storage, directed to another department or section, and deleted. ",
-      "It was built using TSX (React with TypeScript) and TailwindCSS, NodeJs (Express) and PostgreSQL with Prisma ORM.",
+      "Each product can be updated by adding, subtracting, or removing from the storage, directed to another department or section, and deleted.",
     ],
+    skills: ["Node.js", "React", "Tailwind CSS", "PostgreSQL"],
   },
   {
     id: 2,
@@ -108,8 +116,8 @@ export const projectsData: ProjectBody[] = [
     description: [
       "Web Application built to simplify the process of generating patternized PDF student reports each semester, thus improving teacher efficiency and saving time since it was used to generate 300+ reports.",
       "Each student can be updated by changing name and his number, removing from class, update the report, etc. ",
-      "It was built using TSX (React with TypeScript), NodeJs (Express) and MYSQL with Sequelize ORM.",
     ],
+    skills: ["Node.js", "React", "MySQL"],
   },
   {
     id: 3,
@@ -120,6 +128,7 @@ export const projectsData: ProjectBody[] = [
       "In the 1.0 version it was built using NodeJS (Express) and EJS (View Engine) and MariaDB",
       "To enhance performance, system security and code readability in the version 2.0 I splitted the monolith to a front-end TSX (React with TypeScript) and the back-end NodeJs (Express) and MariaDB with Sequelize ORM.",
     ],
+    skills: ["Node.js", "React", "MongoDB"],
   },
   {
     id: 4,
@@ -130,5 +139,6 @@ export const projectsData: ProjectBody[] = [
       "It is a simple todo list built with react and typescript but since it was my first app I have affection for him",
       "That's when I started to get angry with typescript",
     ],
+    skills: ["React", "TypeScript"],
   },
 ]
