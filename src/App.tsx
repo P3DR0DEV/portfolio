@@ -3,7 +3,7 @@ import { useKeenSlider } from "keen-slider/react"
 import { About, Footer, Projects, SectionDivisor, Skills } from "./Components"
 import { data } from "./util"
 import { useColorMode } from "./hooks/useColorMode"
-
+import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md"
 export function App() {
   const [sliderRef] = useKeenSlider({
     breakpoints: {
@@ -23,7 +23,11 @@ export function App() {
               setColorMode(colorMode === "light" ? "dark" : "light")
             }
           >
-            {colorMode === "light" ? "🌙" : "☀️"}
+            {colorMode === "light" ? (
+              <MdOutlineDarkMode />
+            ) : (
+              <MdOutlineLightMode />
+            )}
           </button>
           <img
             src="https://avatars.githubusercontent.com/u/98365194?s=400&u=f423bb737769760c21b39a2e46cd0f1778698b7b&v=4"
