@@ -27,7 +27,7 @@ export function ProjectCard({
           <h3 className="text-3xl font-bold">{ProjectName}</h3>
 
           {description.map((text) => (
-            <p key={text} className="text-xl text-[#747474] ">
+            <p key={text} className="text-xl text-[#747474] dark:text-white">
               {text}
             </p>
           ))}
@@ -36,7 +36,7 @@ export function ProjectCard({
           {skills.map((tag) => (
             <p
               key={tag}
-              className="px-4 py-2 border border-[#284B63] text-[#284B63] rounded-full"
+              className="px-4 py-2 border border-[#284B63] dark:border-[#E4E4E7] text-[#284B63] dark:text-[#E4E4E7] rounded-full"
             >
               {tag}
             </p>

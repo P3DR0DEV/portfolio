@@ -2,6 +2,7 @@ import "keen-slider/keen-slider.min.css"
 import { useKeenSlider } from "keen-slider/react"
 import { About, Footer, Projects, SectionDivisor, Skills } from "./Components"
 import { data } from "./util"
+import { useColorMode } from "./hooks/useColorMode"
 
 export function App() {
   const [sliderRef] = useKeenSlider({
@@ -10,10 +11,20 @@ export function App() {
       "(min-width: 1000px)": { slides: { perView: 3, spacing: 16 } },
     },
   })
+
+  const [colorMode, setColorMode] = useColorMode()
   return (
     <main id="container" className="">
       <div className="max-w-screen-xl m-auto">
         <div className="flex flex-col items-center gap-4">
+          <button
+            className="self-end text-2xl m-4"
+            onClick={() =>
+              setColorMode(colorMode === "light" ? "dark" : "light")
+            }
+          >
+            {colorMode === "light" ? "🌙" : "☀️"}
+          </button>
           <img
             src="https://avatars.githubusercontent.com/u/98365194?s=400&u=f423bb737769760c21b39a2e46cd0f1778698b7b&v=4"
             alt="Profile Pic"
