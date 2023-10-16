@@ -44,12 +44,14 @@ export function App() {
         <SectionDivisor sectionName="ABOUT" />
         <About />
         <SectionDivisor sectionName="TECNOLOGIES" />
-        <div ref={sliderRef} className="keen-slider">
-          {data.map((skill) => (
-            <div className="keen-slider__slide" key={skill.title}>
-              <Skills skill={skill} key={skill.title} />
-            </div>
-          ))}
+        <div className="m-2">
+          <div ref={sliderRef} className="keen-slider">
+            {data.map((skill) => (
+              <div className="keen-slider__slide px-1" key={skill.title}>
+                <Skills skill={skill} key={skill.title} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <Footer />

@@ -50,7 +50,7 @@ export function Carousel({ images }: CarouselProps) {
           {images.map((image) => (
             <img
               key={image}
-              className="rounded-lg keen-slider__slide aspect-auto object-cover"
+              className="rounded-lg keen-slider__slide aspect-auto object-cover px-1"
               alt="image group from projects"
               src={image}
             />
