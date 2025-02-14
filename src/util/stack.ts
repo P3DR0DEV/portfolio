@@ -89,7 +89,7 @@ export const projectsData: ProjectBody[] = [
 			"/propagandas/login.jpeg",
 			"/propagandas/img-admin.jpeg",
 			"/propagandas/img-create.jpeg",
-			"/propagandas/message-admin.jpeg",
+			"/propagandas/messages-admin.jpeg",
 			"/propagandas/create-message.jpeg",
 			"/propagandas/users.jpeg",
 		],
