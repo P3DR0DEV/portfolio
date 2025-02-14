@@ -82,6 +82,34 @@ export const data: IData[] = [
 export const projectsData: ProjectBody[] = [
 	{
 		id: 0,
+		ProjectName: "Advertisement System",
+		images: [
+			"/propagandas/home.jpeg",
+			"/propagandas/home-with-message.jpeg",
+			"/propagandas/login.jpeg",
+			"/propagandas/img-admin.jpeg",
+			"/propagandas/img-create.jpeg",
+			"/propagandas/message-admin.jpeg",
+			"/propagandas/create-message.jpeg",
+			"/propagandas/users.jpeg",
+		],
+		description: [
+			"Web Application built to use as a platform to advertise events hosted in the school.",
+			"Only admins can create and manage advertisements.",
+			"Uses WebSockets to have real-time updates.",
+			"It was built using NextJS 15 and TailwindCSS, NodeJs, Fastify, Websockets, PostgreSQL, Jest, and Clean Architecture.",
+		],
+		skills: [
+			"Node.js",
+			"Fastify",
+			"NextJS 15",
+			"Tailwind CSS",
+			"PostgreSQL",
+			"Websockets",
+		],
+	},
+	{
+		id: 1,
 		ProjectName: "BHO Shopping",
 		images: [
 			"/compras/login.png",
@@ -109,7 +137,7 @@ export const projectsData: ProjectBody[] = [
 		],
 	},
 	{
-		id: 1,
+		id: 2,
 		ProjectName: "Storage BHO",
 		images: [
 			"/estoque/login-estoque.png",
@@ -124,7 +152,7 @@ export const projectsData: ProjectBody[] = [
 		skills: ["Node.js", "React", "Tailwind CSS", "PostgreSQL"],
 	},
 	{
-		id: 2,
+		id: 3,
 		ProjectName: "Student's Report",
 		images: [
 			"/relatorios/relatorios.png",
@@ -138,7 +166,7 @@ export const projectsData: ProjectBody[] = [
 		skills: ["Node.js", "React", "MySQL"],
 	},
 	{
-		id: 3,
+		id: 4,
 		ProjectName: "Web Monitoring Platform",
 		images: ["/log/log-login.png", "/log/log.png"],
 		description: [
@@ -149,7 +177,7 @@ export const projectsData: ProjectBody[] = [
 		skills: ["Node.js", "React", "MongoDB"],
 	},
 	{
-		id: 4,
+		id: 5,
 		ProjectName: "ToDo List",
 		images: ["/todo/todo-cleared.png", "/todo/todo.png"],
 		description: [
