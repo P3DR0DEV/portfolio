@@ -27,7 +27,7 @@ export function ProjectCard({ ProjectName, description, images, isOdd, skills, m
         </div>
         <div className="flex gap-4 flex-wrap">
           {skills.map((tag) => (
-            <Badge key={tag} variant="outline" className="px-4 py-2 rounded-full text-sm font-light">
+            <Badge key={tag} variant="outline" className="px-4 py-2 rounded-full text-sm font-normal">
               {tag}
             </Badge>
           ))}
