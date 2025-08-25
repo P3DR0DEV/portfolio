@@ -204,7 +204,7 @@ export const projectsData: ProjectBody[] = [
   },
   {
     id: 5,
-    ProjectName: 'Web Monitoring Platform',
+    ProjectName: 'Plataforma de Monitoramento de Acessos',
     images: ['/log/log-login.png', '/log/log.png'],
     description:
       'Plataforma de monitoramento de acessos em usuários visitantes, buscando melhorar a segurança da empresa. Desenvolvido com Node.js, Express e MariaDB, incluindo sistema de autenticação e autorização.',
