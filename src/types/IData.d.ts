@@ -13,6 +13,13 @@ export interface ProjectBody {
   id?: number
   ProjectName: string
   images: Image[]
-  description: string[]
+  description: string
   skills: string[]
+  more: {
+    status: 'Concluído' | 'Em andamento' | 'Cancelado'
+    technologies: string[]
+    context: string
+    challenges: string[]  
+    results: string 
+  }
 }

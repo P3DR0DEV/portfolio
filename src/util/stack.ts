@@ -1,193 +1,229 @@
-import type { IData, ProjectBody } from "@/types";
+import type { IData, ProjectBody } from '@/types'
 
 export const data: IData[] = [
-	{
-		title: "Frontend",
-		lang: [
-			{ name: "JavaScript", skill: 3 },
-			{ name: "ReactJs", skill: 3 },
-			{ name: "HTML", skill: 4 },
-			{ name: "CSS", skill: 3 },
-			{ name: "Tailwind CSS", skill: 3 },
-			{ name: "NextJs", skill: 1 },
-			{ name: "React Native", skill: 1 },
-		],
-	},
-	{
-		title: "Backend",
-		lang: [
-			{ name: "Node", skill: 2 },
-			{ name: "Express", skill: 3 },
-			{ name: "Fastify", skill: 1 },
-			{ name: "SpringBoot", skill: 1 },
-		],
-	},
-	{
-		title: "Languages",
-		lang: [
-			{ name: "TypeScript", skill: 3 },
-			{ name: "JavaScript", skill: 3 },
-			{ name: "Python", skill: 1 },
-			{ name: "Java", skill: 1 },
-		],
-	},
-	{
-		title: "Databases",
-		lang: [
-			{ name: "PostgreSQL", skill: 2 },
-			{ name: "MariaDB", skill: 3 },
-			{ name: "MySQL", skill: 3 },
-			{ name: "MongoDB", skill: 3 },
-		],
-	},
-	{
-		title: "Others",
-		lang: [
-			{
-				name: "Docker",
-				skill: 2,
-			},
-			{
-				name: "Jest",
-				skill: 2,
-			},
-			{
-				name: "Vercel",
-				skill: 1,
-			},
-			{
-				name: "Linux",
-				skill: 3,
-			},
-			{
-				name: "Git",
-				skill: 2,
-			},
-			{
-				name: "Github",
-				skill: 3,
-			},
-			{
-				name: "Nvim",
-				skill: 2,
-			},
-			{
-				name: "Figma",
-				skill: 3,
-			},
-		],
-	},
-];
+  {
+    title: 'Frontend',
+    lang: [
+      { name: 'JavaScript', skill: 3 },
+      { name: 'ReactJs', skill: 3 },
+      { name: 'HTML', skill: 4 },
+      { name: 'CSS', skill: 3 },
+      { name: 'Tailwind CSS', skill: 3 },
+      { name: 'NextJs', skill: 1 },
+      { name: 'React Native', skill: 1 },
+    ],
+  },
+  {
+    title: 'Backend',
+    lang: [
+      { name: 'Node', skill: 2 },
+      { name: 'Express', skill: 3 },
+      { name: 'Fastify', skill: 1 },
+      { name: 'SpringBoot', skill: 1 },
+    ],
+  },
+  {
+    title: 'Linguagens',
+    lang: [
+      { name: 'TypeScript', skill: 3 },
+      { name: 'JavaScript', skill: 3 },
+      { name: 'Python', skill: 1 },
+      { name: 'Java', skill: 1 },
+    ],
+  },
+  {
+    title: 'Bancos de Dados',
+    lang: [
+      { name: 'PostgreSQL', skill: 2 },
+      { name: 'MariaDB', skill: 3 },
+      { name: 'MySQL', skill: 3 },
+      { name: 'MongoDB', skill: 3 },
+    ],
+  },
+  {
+    title: 'Outros',
+    lang: [
+      {
+        name: 'Docker',
+        skill: 2,
+      },
+      {
+        name: 'Jest',
+        skill: 2,
+      },
+      {
+        name: 'Vercel',
+        skill: 1,
+      },
+      {
+        name: 'Linux',
+        skill: 3,
+      },
+      {
+        name: 'Git',
+        skill: 2,
+      },
+      {
+        name: 'Github',
+        skill: 3,
+      },
+      {
+        name: 'Nvim',
+        skill: 2,
+      },
+      {
+        name: 'Figma',
+        skill: 3,
+      },
+    ],
+  },
+]
 
 export const projectsData: ProjectBody[] = [
-	{
-		id: 0,
-		ProjectName: "Advertisement System",
-		images: [
-			"/propagandas/propagandas.jpeg",
-			"/propagandas/video.jpeg",
-			"/propagandas/login.jpeg",
-			"/propagandas/uploads.jpeg",
-			"/propagandas/gerencia.jpeg",
-			"/propagandas/upload-video.jpeg",
-			"/propagandas/videos.jpeg",
-			"/propagandas/criar-recado.jpeg",
-			"/propagandas/recados.jpeg",
-			"/propagandas/criar-user.jpeg",
-			"/propagandas/users.jpeg",
-		],
-		description: [
-			"Web Application built to use as a platform to advertise events hosted in the school.",
-			"Only admins can create and manage advertisements.",
-			"Uses WebSockets to have real-time updates.",
-			"It was built using NextJS 15 and TailwindCSS, NodeJs, Fastify, Websockets, PostgreSQL, Jest, and Clean Architecture.",
-		],
-		skills: [
-			"Node.js",
-			"Fastify",
-			"NextJS 15",
-			"Tailwind CSS",
-			"PostgreSQL",
-			"Websockets",
-		],
-	},
-	{
-		id: 1,
-		ProjectName: "BHO Shopping",
-		images: [
-			"/compras/login.png",
-			"/compras/novacompra.png",
-			"/compras/minhascompras.png",
-			"/compras/aprovadas.png",
-			"/compras/admview.png",
-			"/compras/update.png",
-		],
-		description: [
-			"Web Application built to make a simple way to request, approve or reject a purchase.",
-			"Only the admin can approve or reject a purchase.",
-			"Each purchase can be updated, rejected, approved.",
-			"It was built using TSX and TailwindCSS, NodeJs and PostgreSQL with Prisma ORM.",
-			"It was my first time building a backend with Clean-Arch using in memory and databases repositories, and tests.",
-		],
-		skills: [
-			"Node.js",
-			"Fastify",
-			"React",
-			"Tailwind CSS",
-			"PostgreSQL",
-			"JEST",
-			"Clean Architecture",
-		],
-	},
-	{
-		id: 2,
-		ProjectName: "Storage BHO",
-		images: [
-			"/estoque/login-estoque.png",
-			"/estoque/products.png",
-			"/estoque/estoque-novo.png",
-			"/estoque/estoque-update.png",
-		],
-		description: [
-			"Web Application built to keep track of what the company have in they storage.",
-			"Each product can be updated by adding, subtracting, or removing from the storage, directed to another department or section, and deleted.",
-		],
-		skills: ["Node.js", "React", "Tailwind CSS", "PostgreSQL"],
-	},
-	{
-		id: 3,
-		ProjectName: "Student's Report",
-		images: [
-			"/relatorios/relatorios.png",
-			"/relatorios/relatorios-turma.png",
-			"/relatorios/relatorio.png",
-		],
-		description: [
-			"Web Application built to simplify the process of generating standardized PDF student reports each semester, thus improving teacher efficiency and saving time since it was used to generate 300+ reports.",
-			"Each student can be updated by changing name and his number, removing from class, update the report, etc. ",
-		],
-		skills: ["Node.js", "React", "MySQL"],
-	},
-	{
-		id: 4,
-		ProjectName: "Web Monitoring Platform",
-		images: ["/log/log-login.png", "/log/log.png"],
-		description: [
-			"Web Application built to safeguard the company against potential cybercrimes by maintaining essential guest user details.",
-			"In the 1.0 version it was built using NodeJS (Express) and EJS (View Engine) and MariaDB",
-			"To enhance performance, system security and code readability in the version 2.0 I splitted the monolith to a front-end TSX (React with TypeScript) and the back-end NodeJs (Express) and MariaDB with Sequelize ORM.",
-		],
-		skills: ["Node.js", "React", "MongoDB"],
-	},
-	{
-		id: 5,
-		ProjectName: "ToDo List",
-		images: ["/todo/todo-cleared.png", "/todo/todo.png"],
-		description: [
-			"This was my first Web App built using ReactJS and i use it a lot to remind me of what I have to do.",
-			"It is a simple todo list built with react and typescript but since it was my first app I have affection for him",
-			"That's when I started to get angry with typescript",
-		],
-		skills: ["React", "TypeScript"],
-	},
-];
+  {
+    id: 0,
+    ProjectName: 'Sistema de Gestão de Conteúdo Digital',
+    images: [
+      '/propagandas/propagandas.jpeg',
+      '/propagandas/video.jpeg',
+      '/propagandas/login.jpeg',
+      '/propagandas/uploads.jpeg',
+      '/propagandas/gerencia.jpeg',
+      '/propagandas/upload-video.jpeg',
+      '/propagandas/videos.jpeg',
+      '/propagandas/criar-recado.jpeg',
+      '/propagandas/recados.jpeg',
+      '/propagandas/criar-user.jpeg',
+      '/propagandas/users.jpeg',
+    ],
+    description:
+      'Sistema completo para gerenciamento dinâmico de conteúdo digital em kiosk educacional. Desenvolvido com Clean Architecture, Node.js, Next.js e comunicação em tempo real via WebSocket. Reduziu em 90% o tempo de atualização de conteúdo, substituindo processo manual por plataforma intuitiva que permite à equipe de marketing controlar remotamente imagens, vídeos e mensagens exibidas na recepção.',
+    skills: ['Node.js', 'Fastify', 'NextJS', 'Docker', 'PostgreSQL', 'Websockets', 'Vitest'],
+    more: {
+      status: 'Concluído',
+      technologies: ['Node.js', 'TypeScript', 'React', 'PostgreSQL', 'Prisma', 'Docker', 'Jest', 'Nodemailer', 'Swagger'],
+      context:
+        'Desenvolvido sob demanda da direção para modernizar o processo de aquisições institucionais. O sistema anterior baseava-se em comunicação verbal e informal, criando falta de rastreabilidade, controle de estoque deficiente e ausência de governança nas aprovações. A necessidade era criar um workflow estruturado que formalizasse pedidos e estabelecesse hierarquia de aprovações.',
+      challenges:[
+        'Arquitetei sistema robusto com Nodemailer, logs de entrega para garantir comunicação eficaz.','Implementei sistema de RBAC (Role-Based Access Control) com middleware de autorização, garantindo que informações sensíveis (como aprovador do pedido) fossem visíveis apenas para níveis hierárquicos apropriados'
+      ],
+      results:
+        'A solução promoveu uma transformação operacional completa, substituindo processos verbais e informais por um workflow digitalizado, auditável e governado. O reconhecimento institucional foi imediato, com a solução sendo apresentada e aprovada pela matriz, servindo como base para implementação em toda a rede educacional e estabelecendo um novo padrão de processos digitais na organização. Os benefícios mensuráveis incluem a formalização de 100% dos pedidos de compra, controle total de estoque e aprovações, transparência completa no processo decisório e redução drástica de perdas por falta de rastreabilidade. Esta implementação demonstrou como a digitalização estratégica pode gerar impactos significativos tanto operacionais quanto organizacionais, criando valor sustentável para toda a instituição.',
+    },  
+  },
+  {
+    id: 1,
+    ProjectName: 'Sistema de Carômetro Digital para Identificação Estudantil',
+    images: [
+      '/carometro/carometro.jpeg',
+    ],
+    description:
+      'Plataforma de gestão de fotos estudantis com otimização inteligente de imagens para geração de PDFs leves sem perda de qualidade. Sistema permanece em produção para identificação diária de alunos.',
+    skills: ['Node.js', 'Fastify', 'NextJS', 'Docker', 'PostgreSQL', 'DDD'],
+    more: {
+      status: 'Concluído',
+      technologies: ['Node.js', 'TypeScript', 'React', 'PostgreSQL', 'Prisma', 'Docker', 'Swagger'],
+      context:
+        'Desenvolvido para atender demanda específica da gestão escolar: criar um sistema centralizado de identificação fotográfica dos alunos que pudesse exportar dados organizados para outras aplicações institucionais. O objetivo era digitalizar e padronizar o processo de carômetro, facilitando a identificação de estudantes pelos funcionários.',
+      challenges:[
+        'Fotos de alta qualidade geravam PDFs excessivamente pesados, impactando performance e armazenamento.'
+      ],
+      results:
+        'O sistema está em operação contínua desde sua implementação, sendo usado diariamente pela equipe para identificação de alunos com total estabilidade. A flexibilidade da plataforma permite tanto visualização digital quanto impressão quando necessário. Processo de identificação muito mais eficiente e moderno, que se tornou parte essencial da rotina operacional da instituição.',
+    },  
+  },
+  {
+    id: 2,
+    ProjectName: 'Sistema de Gestão de Pedidos de Compras Corporativas',
+    images: [
+      '/compras/login.png',
+      '/compras/novacompra.png',
+      '/compras/minhascompras.png',
+      '/compras/aprovadas.png',
+      '/compras/admview.png',
+      '/compras/update.png',
+    ],
+    description:
+      'Plataforma completa de workflow para pedidos de compras institucionais, transformando processo informal em sistema estruturado com aprovações hierárquicas e rastreabilidade completa. Desenvolvido com Clean Architecture e TDD, incluindo sistema de notificações por email e controle granular de permissões. Solução foi tão eficaz que se tornou base para sistema corporativo de toda a rede educacional.',
+    skills: ['Node.js', 'Fastify', 'React', 'Prisma', 'Jest', 'PostgreSQL', 'Docker', 'Clean Architecture'],
+    more: {
+      status: 'Concluído',
+      technologies: ['Node.js', 'TypeScript', 'React', 'PostgreSQL', 'Prisma', 'Docker', 'Jest', 'Nodemailer', 'Swagger'],
+      context:
+        'Desenvolvido sob demanda da direção para modernizar o processo de aquisições institucionais. O sistema anterior baseava-se em comunicação verbal e informal, criando falta de rastreabilidade, controle de estoque deficiente e ausência de governança nas aprovações. A necessidade era criar um workflow estruturado que formalizasse pedidos e estabelecesse hierarquia de aprovações.',
+      challenges: [
+        'Implementei sistema de RBAC (Role-Based Access Control) com middleware de autorização, garantindo que informações sensíveis (como aprovador do pedido) fossem visíveis apenas para níveis hierárquicos apropriados',],
+      results:'O projeto transformou completamente a operação, saindo de processos informais e verbais para um sistema digitalizado e rastreável. O impacto foi tão positivo que a matriz adotou a solução como padrão para toda a rede educacional, utilizando o meu projeto como base para uma versão melhorada. Na prática, conseguimos formalizar 100% dos pedidos de compra, ter controle total do estoque e das aprovações, além de eliminar praticamente todas as perdas que aconteciam por falta de rastreabilidade. O resultado foi uma operação muito mais transparente e eficiente para toda a equipe.',
+    },
+  },
+  {
+    id: 3,
+    ProjectName: 'Sistema de Controle de Estoque Multi-Unidades',
+    images: [
+      '/estoque/login-estoque.png',
+      '/estoque/products.png',
+      '/estoque/estoque-novo.png',
+      '/estoque/estoque-update.png',
+    ],
+    description:
+      'Sistema de gestão de inventário desenvolvido como evolução natural do sistema de compras, organizando estoque por unidades e setores para otimizar decisões de aquisição. Arquitetado para futura integração automatizada entre compras e inventário. Demonstra capacidade de pensar em ecossistemas integrados e arquitetura evolutiva',
+    skills: ['Node.js', 'React', 'Tailwind CSS', 'PostgreSQL', 'Express', 'Docker'],
+    more: {
+      status: 'Cancelado',
+      technologies: ['Node.js','Express', 'TypeScript', 'React', 'PostgreSQL', 'Prisma', 'Docker'],
+      context: 'Desenvolvido como extensão natural do bem-sucedido sistema de compras, este projeto surgiu da necessidade organizacional de ter visibilidade completa do inventário antes de aprovar novas aquisições. O objetivo era eliminar compras desnecessárias através de relatórios precisos que mostrassem disponibilidade real de itens em estoque.',
+      challenges: ['Arquitetar a comunicação entre os sistemas de compras e estoque.', 'Evitar a duplicação de dados inseridos no sistema de estoque, evitando erros de análise de dados.'],
+      results: 'O desenvolvimento foi interrompido devido à migração corporativa para sistema padronizado da rede, demonstrando como decisões organizacionais podem impactar projetos técnicos mesmo quando bem arquitetados.',
+    },
+  },
+  {
+    id: 4,
+    ProjectName: 'Sistema de Geração Automatizada de Relatórios Pedagógicos',
+    images: ['/relatorios/relatorios.png', '/relatorios/relatorios-turma.png', '/relatorios/relatorio.png'],
+    description:
+      'Plataforma que automatizou completamente a geração de relatórios pedagógicos, eliminando 1 semana de trabalho manual por semestre do setor de TI. Sistema com controle de acesso hierárquico, geração de PDFs padronizados e infraestrutura híbrida intranet/internet com Nginx e SSL. Incluiu evolução para relatórios históricos multi-etapas após feedback dos usuários.',
+    skills: ['Node.js', 'React', 'MariaDB', 'Express', 'Docker', 'Nginx', 'SSL'],
+    more: {
+      status: 'Concluído',
+      technologies: ['Node.js', 'TypeScript', 'React', 'MariaDB', 'Prisma', 'Docker', 'Nginx', 'Geração de PDF', 'SSL'],
+      context:
+        'Desenvolvido para resolver um gargalo operacional significativo: professores com diferentes níveis de competência em ferramentas de edição geravam relatórios pedagógicos com formatação inconsistente, demandando 1 semana completa de trabalho manual do setor de TI por semestre apenas para padronização e formatação. A escala do problema era proporcional ao número de alunos da instituição.',
+      challenges: [
+        'Implementei arquitetura híbrida com Nginx como proxy reverso, configurando SSL/TLS para acesso seguro via internet. Primeira experiência com Nginx para produção.',
+        'Desenvolver um sistema robusto de geração de PDFs com templates consistentes, campos dinâmicos e formatação profissional',
+      ],
+      results:'O projeto gerou uma economia significativa de recursos, eliminando cerca de 40 horas de trabalho manual do TI por semestre através da automação completa do processo. Além da economia de tempo, a solução trouxe padronização total dos relatórios, permitindo que os professores se concentrassem no conteúdo pedagógico ao invés da formatação. A alta aceitação pelos usuários resultou em feedback positivo e pedidos constantes de melhorias, levando o sistema a evoluir continuamente. O que começou como relatórios simples por etapa se expandiu para um histórico completo, habilitando trabalho remoto com segurança e gerando documentos com qualidade profissional.',
+    },
+  },
+  {
+    id: 5,
+    ProjectName: 'Web Monitoring Platform',
+    images: ['/log/log-login.png', '/log/log.png'],
+    description:
+      'Plataforma de monitoramento de acessos em usuários visitantes, buscando melhorar a segurança da empresa. Desenvolvido com Node.js, Express e MariaDB, incluindo sistema de autenticação e autorização.',
+    skills: ['Node.js', 'React', 'MongoDB', 'Express', 'JWT', 'Active Directory'],
+    more: {
+      status: 'Concluído',
+      technologies: ['Node.js', 'TypeScript', 'React', 'MariaDB', 'Express', 'JWT', 'Active Directory'],
+      context:
+        'Desenvolvido para monitorar acessos em um usuário visitante cadastrado no ActiveDirectory, buscando melhorar a segurança da empresa. O sistema foi desenvolvido com Node.js, Express e MariaDB, incluindo sistema de autenticação e autorização.',
+      challenges: ['Desenvolver um sistema robusto de autenticação e autorização.', 'Implementar um sistema de monitoramento de acessos.', 'Promover a comunicação entre os sistemas de monitoramento e autenticação nas máquinas da instituição.'],
+      results: 'O sistema foi desenvolvido com Node.js, Express e MariaDB, incluindo sistema de autenticação e autorização.',
+    }
+  },
+  {
+    id: 6,
+    ProjectName: 'ToDo List',
+    images: ['/todo/todo-cleared.png', '/todo/todo.png'],
+    description:
+      'Todo List é um aplicativo simples desenvolvido com ReactJS e TypeScript, usado para lembrar de tarefas e eventos importantes. Foi o primeiro aplicativo desenvolvido com React e TypeScript e me inspirou a criar outros aplicativos com esses frameworks.',
+    skills: ['React', 'TypeScript'],
+    more: {
+      status: 'Concluído',
+      technologies: ['React', 'TypeScript'],
+      context: 'Desenvolvido para estudar os conceitos básicos de React e TypeScript, incluindo componentes, props, estados e hooks. O sistema foi desenvolvido com React e TypeScript.',
+      challenges: ['Compreender os conceitos básicos de React e TypeScript.', 'Desenvolver um sistema simples de lista de tarefas.', 'Utilizar o TypeScript para validar os dados inseridos.'],
+      results: 'O sistema foi desenvolvido com React e TypeScript e até hoje utilizo com frequência essa combinação de ferramentas.',
+    }
+  },
+]

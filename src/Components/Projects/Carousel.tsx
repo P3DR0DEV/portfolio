@@ -1,27 +1,19 @@
-import { useKeenSlider } from "keen-slider/react"
-import { useState } from "react"
+/** biome-ignore-all lint/a11y/useKeyWithClickEvents: <> */
+import { useKeenSlider } from 'keen-slider/react'
+import { useState } from 'react'
 
-function Arrow(props: {
-  disabled: boolean
-  left?: boolean
-  onClick: (e: any) => void
-}) {
-  const arrowDisabled = props.disabled ? " arrow--disabled" : ""
+function Arrow(props: { disabled: boolean; left?: boolean; onClick: (e: any) => void }) {
+  const arrowDisabled = props.disabled ? ' arrow--disabled' : ''
   return (
     <svg
       onClick={props.onClick}
-      className={`arrow ${
-        props.left ? "arrow--left" : "arrow--right"
-      } ${arrowDisabled}`}
+      className={`arrow ${props.left ? 'arrow--left' : 'arrow--right'} ${arrowDisabled}`}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
     >
-      {props.left && (
-        <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
-      )}
-      {!props.left && (
-        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
-      )}
+      <title>arrow</title>
+      {props.left && <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />}
+      {!props.left && <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />}
     </svg>
   )
 }
@@ -44,7 +36,7 @@ export function Carousel({ images }: CarouselProps) {
   })
 
   return (
-    <>
+
       <div className="navigation-wrapper">
         <div ref={sliderRef} className="keen-slider">
           {images.map((image) => (
@@ -60,44 +52,34 @@ export function Carousel({ images }: CarouselProps) {
           <>
             <Arrow
               left
-              onClick={(e: any) =>
-                e.stopPropagation() || instanceRef.current?.prev()
-              }
+              onClick={(e: any) => e.stopPropagation() || instanceRef.current?.prev()}
               disabled={currentSlide === 0}
             />
 
             <Arrow
-              onClick={(e: any) =>
-                e.stopPropagation() || instanceRef.current?.next()
-              }
-              disabled={
-                currentSlide ===
-                instanceRef.current.track.details.slides.length - 1
-              }
+              onClick={(e: any) => e.stopPropagation() || instanceRef.current?.next()}
+              disabled={currentSlide === instanceRef.current.track.details.slides.length - 1}
             />
           </>
         )}
         {loaded && instanceRef.current && (
           <div className="dots">
-            {[
-              ...Array(instanceRef.current.track.details.slides.length).keys(),
-            ].map((idx) => {
+            {[...Array(instanceRef.current.track.details.slides.length).keys()].map((idx) => {
               return (
                 <button
-                  role="button"
+                  type='button'
                   aria-label="navigation dots"
                   key={idx}
                   title={String(currentSlide)}
                   onClick={() => {
                     instanceRef.current?.moveToIdx(idx)
                   }}
-                  className={"dot" + (currentSlide === idx ? " active" : "")}
+                  className={'dot' + (currentSlide === idx ? ' active' : '')}
                 ></button>
               )
             })}
           </div>
         )}
       </div>
-    </>
   )
 }
