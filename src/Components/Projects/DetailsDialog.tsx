@@ -9,7 +9,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 export function DetailsDialog({ name, more }: { name: string; more: ProjectBody['more'] }) {
   return (
     <Dialog>
-      <DialogTrigger className="self-end">
+      <DialogTrigger className="self-start">
         <Button size="sm" variant="outline" className="hover:bg-primary/5 transition-colors bg-transparent">
           <ExternalLink size={16} className="mr-2" />
           Saiba mais

@@ -21,12 +21,9 @@ export function ProjectCard({ ProjectName, description, images, isOdd, skills, m
       </div>
       <div className="md:max-w-[40%] text-justify flex flex-col gap-2 justify-around ">
         <div className="gap-3 flex flex-col">
-          <div className="flex flex-col">
-            <h3 className="text-3xl font-bold">{ProjectName}</h3>
-            <DetailsDialog name={ProjectName} more={more} />
-          </div>
-
+          <h3 className="text-3xl font-bold">{ProjectName}</h3>
           <p className="text-xl">{description}</p>
+          <DetailsDialog name={ProjectName} more={more} />
         </div>
         <div className="flex gap-4 flex-wrap">
           {skills.map((tag) => (
