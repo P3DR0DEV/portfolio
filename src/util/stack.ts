@@ -115,7 +115,14 @@ export const projectsData: ProjectBody[] = [
     id: 1,
     ProjectName: 'Sistema de Carômetro Digital para Identificação Estudantil',
     images: [
-      '/carometro/carometro.jpeg',
+      '/carometro/frontpage.png',
+      '/carometro/login.png',
+      '/carometro/years.png',
+      '/carometro/classes.png',
+      '/carometro/flex-view.png',
+      '/carometro/grid.png',
+      '/carometro/update.png',
+      '/carometro/pdf.png',
     ],
     description:
       'Plataforma de gestão de fotos estudantis com otimização inteligente de imagens para geração de PDFs leves sem perda de qualidade. Sistema permanece em produção para identificação diária de alunos.',
