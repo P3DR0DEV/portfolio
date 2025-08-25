@@ -12,14 +12,14 @@ export function ProjectCard({ ProjectName, description, images, isOdd, skills, m
     <div
       className={
         isOdd
-          ? `flex flex-col md:flex-row md:justify-between md:gap-7`
-          : `flex flex-col md:flex-row-reverse md:justify-between md:gap-7`
+          ? `flex flex-col lg:flex-row lg:justify-between lg:gap-7`
+          : `flex flex-col lg:flex-row-reverse lg:justify-between lg:gap-7`
       }
     >
-      <div className="xl:w-[700px] md:w-[600px]">
+      <div className="xl:w-[700px] lg:w-[600px]">
         <Carousel images={images} />
       </div>
-      <div className="md:max-w-[40%] text-justify flex flex-col gap-2 justify-around ">
+      <div className="lg:max-w-[40%] text-justify flex flex-col gap-2 justify-around ">
         <div className="gap-3 flex flex-col">
           <h3 className="text-3xl font-bold">{ProjectName}</h3>
           <p className="text-xl">{description}</p>
