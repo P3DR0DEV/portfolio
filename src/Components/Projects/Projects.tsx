@@ -1,5 +1,5 @@
-import { ProjectCard } from "./ProjectCard"
-import { projectsData } from "@/util"
+import { projectsData } from '@/util'
+import { ProjectCard } from './ProjectCard'
 
 export function Projects() {
   return (
@@ -13,6 +13,7 @@ export function Projects() {
             images={project.images}
             isOdd={(project.id as number) % 2 === 0}
             skills={project.skills}
+            more={project.more}
           />
         ))}
       </div>
