@@ -17,7 +17,7 @@ export function DetailsDialog({ name, more }: { name: string; more: ProjectBody[
         </Button>
       </DialogTrigger>
 
-      <DialogContent className="min-w-5xl max-h-[80vh] overflow-y-auto">
+      <DialogContent className="max-w-3xl 2xl:min-w-5xl max-h-[80vh] overflow-y-auto">
         <DialogHeader className="space-y-3">
           <div className="flex items-start justify-between">
             <DialogTitle className="text-2xl font-bold text-left pr-4">{name}</DialogTitle>
@@ -43,11 +43,18 @@ export function DetailsDialog({ name, more }: { name: string; more: ProjectBody[
               <Lightbulb className="text-amber-500" size={20} />
               <h3 className="font-semibold text-lg">Principais Desafios</h3>
             </div>
-            <div className="space-y-2 pl-7">
+            <div className="space-y-4 pl-7">
               {more.challenges.map((challenge, index) => (
-                <div key={index} className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 shrink-0" />
-                  <p className="text-muted-foreground leading-relaxed">{challenge}</p>
+                <div key={index} className="flex flex-col gap-2">
+                  <div className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-amber-500 shrink-0" />
+                    <p className="text-muted-foreground leading-relaxed">
+                      <strong>Desafio:</strong> {challenge.question}
+                    </p>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    <strong>✅ Solução Implementada:</strong> {challenge.answer}
+                  </p>
                 </div>
               ))}
             </div>
