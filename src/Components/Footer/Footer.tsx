@@ -15,7 +15,7 @@ export function Footer() {
         <a target="_blank" href="https://linkedin.com/in/pedro-cmendes/" aria-label="LinkedIn link" rel="noopener">
           <FaLinkedin className="text-[#918E9B] text-5xl hover:text-[#0A66C2]" />
         </a>
-        <a target="_blank" href="mailto:pedrohenriquecamposmendes@hotmail.com" aria-label="Email link" rel="noopener">
+        <a target="_blank" href="mailto:pedro.mendesctt@gmail.com" aria-label="Email link" rel="noopener">
           <FaSquareEnvelope className="text-[#918E9B] text-5xl hover:text-[#EA4335]" />
         </a>
       </div>

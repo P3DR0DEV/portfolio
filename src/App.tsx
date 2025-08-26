@@ -1,9 +1,8 @@
 /** biome-ignore-all lint/correctness/useUniqueElementIds: <> */
 import 'keen-slider/keen-slider.min.css'
 import { useKeenSlider } from 'keen-slider/react'
-import { MdOutlineDarkMode, MdOutlineLightMode } from 'react-icons/md'
 import { About, Footer, Projects, SectionDivisor, Skills } from './Components'
-import { useColorMode } from './hooks/useColorMode'
+import { ModeToggle } from './Components/ModeToggle'
 import { data } from './util'
 export function App() {
   const [sliderRef] = useKeenSlider({
@@ -13,18 +12,13 @@ export function App() {
     },
   })
 
-  const [colorMode, setColorMode] = useColorMode()
   return (
-    <main id="container" className="">
-      <div className="max-w-(--breakpoint-xl) m-auto">
+    <main id="container">
+      <div className="max-w-(--breakpoint-2xl) m-auto">
         <div className="flex flex-col items-center gap-4">
-          <button
-            type="button"
-            className="self-end text-2xl m-4"
-            onClick={() => setColorMode(colorMode === 'light' ? 'dark' : 'light')}
-          >
-            {colorMode === 'light' ? <MdOutlineDarkMode /> : <MdOutlineLightMode />}
-          </button>
+          <div className='self-end mt-8 mr-4'>
+            <ModeToggle />
+          </div>
           <img
             src="https://avatars.githubusercontent.com/u/98365194?s=400&u=f423bb737769760c21b39a2e46cd0f1778698b7b&v=4"
             alt="Profile Pic"
@@ -37,11 +31,11 @@ export function App() {
             tecnologias modernas.
           </h3>
         </div>
-        <SectionDivisor sectionName="WORK" />
+        <SectionDivisor sectionName="PROJETOS" />
         <Projects />
-        <SectionDivisor sectionName="ABOUT" />
+        <SectionDivisor sectionName="SOBRE" />
         <About />
-        <SectionDivisor sectionName="TECHNOLOGIES" />
+        <SectionDivisor sectionName="TECNOLOGIAS" />
         <div className="m-2">
           <div ref={sliderRef} className="keen-slider">
             {data.map((skill) => (

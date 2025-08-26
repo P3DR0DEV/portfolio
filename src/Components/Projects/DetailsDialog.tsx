@@ -11,23 +11,17 @@ export function DetailsDialog({ name, more }: { name: string; more: ProjectBody[
   return (
     <Dialog>
       <DialogTrigger className="self-start">
-        <Button className="text-lg">
+        <Button variant="outline" className="text-lg cursor-pointer">
           <ExternalLink size={16} className="mr-2" />
           Saiba mais
         </Button>
       </DialogTrigger>
 
-      <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
+      <DialogContent className="min-w-5xl max-h-[80vh] overflow-y-auto">
         <DialogHeader className="space-y-3">
           <div className="flex items-start justify-between">
             <DialogTitle className="text-2xl font-bold text-left pr-4">{name}</DialogTitle>
-            {more.status && (
-              <Badge variant={more.status === 'Concluído' ? 'default' : 'secondary'} className="mr-4">
-                {more.status}
-              </Badge>
-            )}
           </div>
-          {/* <DialogDescription className="text-base leading-relaxed">{more.subTitle}</DialogDescription> */}
         </DialogHeader>
 
         <div className="space-y-6 mt-6">
