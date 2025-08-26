@@ -12,8 +12,8 @@ export function ProjectCard({ ProjectName, description, images, isOdd, skills, m
     <div
       className={
         isOdd
-          ? `flex flex-col lg:flex-row lg:justify-between lg:gap-7`
-          : `flex flex-col lg:flex-row-reverse lg:justify-between lg:gap-7`
+          ? `flex flex-col lg:flex-row lg:justify-between lg:gap-5`
+          : `flex flex-col lg:flex-row-reverse lg:justify-between lg:gap-5`
       }
     >
       <div className="xl:w-[820px] lg:w-[600px]">
