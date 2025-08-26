@@ -17,7 +17,7 @@ export function DetailsDialog({ name, more }: { name: string; more: ProjectBody[
         </Button>
       </DialogTrigger>
 
-      <DialogContent className="max-w-3xl 2xl:min-w-5xl max-h-[80vh] overflow-y-auto">
+      <DialogContent className="max-w-3xl lg:min-w-5xl max-h-[80vh] overflow-y-auto">
         <DialogHeader className="space-y-3">
           <div className="flex items-start justify-between">
             <DialogTitle className="text-2xl font-bold text-left pr-4">{name}</DialogTitle>
@@ -46,8 +46,8 @@ export function DetailsDialog({ name, more }: { name: string; more: ProjectBody[
             <div className="space-y-4 pl-7">
               {more.challenges.map((challenge, index) => (
                 <div key={index} className="flex flex-col gap-2">
-                  <div className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-amber-500 shrink-0" />
+                  <div className="flex items-start lg:items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-amber-500 shrink-0 mt-3 lg:mt-0" />
                     <p className="text-muted-foreground leading-relaxed">
                       <strong>Desafio:</strong> {challenge.question}
                     </p>
