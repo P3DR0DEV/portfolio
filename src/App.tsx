@@ -16,7 +16,7 @@ export function App() {
   const [colorMode, setColorMode] = useColorMode()
   return (
     <main id="container" className="">
-      <div className="max-w-screen-xl m-auto">
+      <div className="max-w-(--breakpoint-xl) m-auto">
         <div className="flex flex-col items-center gap-4">
           <button
             type="button"
@@ -32,7 +32,10 @@ export function App() {
           />
           <h1 className="text-4xl text-center">Olá, eu sou Pedro Mendes 👋</h1>
           <h2 className="text-2xl text-center">Full Stack Developer</h2>
-          <h3 className="text-lg text-center flex-wrap">Desenvolvedor apaixonado por criar soluções digitais inovadoras.  Especializado em Node.js, React e tecnologias modernas.</h3>
+          <h3 className="text-lg text-center flex-wrap">
+            Desenvolvedor apaixonado por criar soluções digitais inovadoras. Especializado em Node.js, React e
+            tecnologias modernas.
+          </h3>
         </div>
         <SectionDivisor sectionName="WORK" />
         <Projects />

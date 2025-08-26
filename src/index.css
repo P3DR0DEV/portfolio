@@ -1,120 +1,182 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap") layer(base);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-body {
-  font-family: "Roboto", sans-serif;
+@plugin 'tailwindcss-animate';
+
+@custom-variant dark (&:is(class *));
+
+@theme {
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-chart-1: hsl(var(--chart-1));
+  --color-chart-2: hsl(var(--chart-2));
+  --color-chart-3: hsl(var(--chart-3));
+  --color-chart-4: hsl(var(--chart-4));
+  --color-chart-5: hsl(var(--chart-5));
 }
 
-.dark {
-  @apply text-white bg-gray-600;
-}
-.navigation-wrapper {
-  position: relative;
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
 }
 
-.dots {
-  display: flex;
-  padding: 10px 0;
-  justify-content: center;
-}
+@layer utilities {
+  body {
+    font-family: "Roboto", sans-serif;
+  }
 
-.dot {
-  border: none;
-  width: 10px;
-  height: 10px;
-  background: #c5c5c5;
-  border-radius: 50%;
-  margin: 0 5px;
-  padding: 5px;
-  cursor: pointer;
-}
+  .dark {
+    @apply text-white bg-gray-600;
+  }
+  .navigation-wrapper {
+    position: relative;
+  }
 
-.dot:focus {
-  outline: none;
-}
+  .dots {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+  }
 
-.dot.active {
-  background: #000;
-}
+  .dot {
+    border: none;
+    width: 10px;
+    height: 10px;
+    background: #c5c5c5;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
+  }
 
-.arrow {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  fill: #1d1d1d;
-  cursor: pointer;
-}
+  .dot:focus {
+    outline: none;
+  }
 
-.arrow--left {
-  left: 5px;
-}
+  .dot.active {
+    background: #000;
+  }
 
-.arrow--right {
-  left: auto;
-  right: 5px;
-}
+  .arrow {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    fill: #1d1d1d;
+    cursor: pointer;
+  }
 
-.arrow--disabled {
-  fill: rgba(0, 0, 0, 0.356);
-}
+  .arrow--left {
+    left: 5px;
+  }
 
-.navigation-wrapper {
-  position: relative;
-}
+  .arrow--right {
+    left: auto;
+    right: 5px;
+  }
 
-.dots {
-  display: flex;
-  padding: 10px 0;
-  justify-content: center;
-}
+  .arrow--disabled {
+    fill: rgba(0, 0, 0, 0.356);
+  }
 
-.dot {
-  border: none;
-  width: 10px;
-  height: 10px;
-  background: #c5c5c5;
-  border-radius: 50%;
-  margin: 0 5px;
-  padding: 5px;
-  cursor: pointer;
-}
+  .navigation-wrapper {
+    position: relative;
+  }
 
-.dot:focus {
-  outline: none;
-}
+  .dots {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+  }
 
-.dot.active {
-  background: #000;
-}
+  .dot {
+    border: none;
+    width: 10px;
+    height: 10px;
+    background: #c5c5c5;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
+  }
 
-.arrow {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  fill: #1d1d1d;
-  cursor: pointer;
-}
+  .dot:focus {
+    outline: none;
+  }
 
-.arrow--left {
-  left: 5px;
-}
+  .dot.active {
+    background: #000;
+  }
 
-.arrow--right {
-  left: auto;
-  right: 5px;
-}
+  .arrow {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    fill: #1d1d1d;
+    cursor: pointer;
+  }
 
-.arrow--disabled {
-  fill: rgba(0, 0, 0, 0.356);
+  .arrow--left {
+    left: 5px;
+  }
+
+  .arrow--right {
+    left: auto;
+    right: 5px;
+  }
+
+  .arrow--disabled {
+    fill: rgba(0, 0, 0, 0.356);
+  }
 }
 
 @layer base {

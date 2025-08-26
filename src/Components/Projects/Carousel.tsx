@@ -36,50 +36,49 @@ export function Carousel({ images }: CarouselProps) {
   })
 
   return (
-
-      <div className="navigation-wrapper">
-        <div ref={sliderRef} className="keen-slider">
-          {images.map((image) => (
-            <img
-              key={image}
-              className="rounded-lg keen-slider__slide aspect-auto object-cover px-1"
-              alt="image group from projects"
-              src={image}
-            />
-          ))}
-        </div>
-        {loaded && instanceRef.current && (
-          <>
-            <Arrow
-              left
-              onClick={(e: any) => e.stopPropagation() || instanceRef.current?.prev()}
-              disabled={currentSlide === 0}
-            />
-
-            <Arrow
-              onClick={(e: any) => e.stopPropagation() || instanceRef.current?.next()}
-              disabled={currentSlide === instanceRef.current.track.details.slides.length - 1}
-            />
-          </>
-        )}
-        {loaded && instanceRef.current && (
-          <div className="dots">
-            {[...Array(instanceRef.current.track.details.slides.length).keys()].map((idx) => {
-              return (
-                <button
-                  type='button'
-                  aria-label="navigation dots"
-                  key={idx}
-                  title={String(currentSlide)}
-                  onClick={() => {
-                    instanceRef.current?.moveToIdx(idx)
-                  }}
-                  className={'dot' + (currentSlide === idx ? ' active' : '')}
-                ></button>
-              )
-            })}
-          </div>
-        )}
+    <div className="navigation-wrapper">
+      <div ref={sliderRef} className="keen-slider">
+        {images.map((image) => (
+          <img
+            key={image}
+            className="rounded-lg keen-slider__slide aspect-auto object-cover px-1"
+            alt="image group from projects"
+            src={image}
+          />
+        ))}
       </div>
+      {loaded && instanceRef.current && (
+        <>
+          <Arrow
+            left
+            onClick={(e: any) => e.stopPropagation() || instanceRef.current?.prev()}
+            disabled={currentSlide === 0}
+          />
+
+          <Arrow
+            onClick={(e: any) => e.stopPropagation() || instanceRef.current?.next()}
+            disabled={currentSlide === instanceRef.current.track.details.slides.length - 1}
+          />
+        </>
+      )}
+      {loaded && instanceRef.current && (
+        <div className="dots">
+          {[...Array(instanceRef.current.track.details.slides.length).keys()].map((idx) => {
+            return (
+              <button
+                type="button"
+                aria-label="navigation dots"
+                key={idx}
+                title={String(currentSlide)}
+                onClick={() => {
+                  instanceRef.current?.moveToIdx(idx)
+                }}
+                className={'dot' + (currentSlide === idx ? ' active' : '')}
+              ></button>
+            )
+          })}
+        </div>
+      )}
+    </div>
   )
 }

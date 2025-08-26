@@ -19,7 +19,7 @@ export interface ProjectBody {
     status: 'Concluído' | 'Em andamento' | 'Cancelado'
     technologies: string[]
     context: string
-    challenges: string[]  
-    results: string 
+    challenges: string[]
+    results: string
   }
 }

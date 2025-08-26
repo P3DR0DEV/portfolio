@@ -101,15 +101,26 @@ export const projectsData: ProjectBody[] = [
     skills: ['Node.js', 'Fastify', 'NextJS', 'Docker', 'PostgreSQL', 'Websockets', 'Vitest'],
     more: {
       status: 'Concluído',
-      technologies: ['Node.js', 'TypeScript', 'React', 'PostgreSQL', 'Prisma', 'Docker', 'Jest', 'Nodemailer', 'Swagger'],
+      technologies: [
+        'Node.js',
+        'TypeScript',
+        'React',
+        'PostgreSQL',
+        'Prisma',
+        'Docker',
+        'Jest',
+        'Nodemailer',
+        'Swagger',
+      ],
       context:
         'Desenvolvido sob demanda da direção para modernizar o processo de aquisições institucionais. O sistema anterior baseava-se em comunicação verbal e informal, criando falta de rastreabilidade, controle de estoque deficiente e ausência de governança nas aprovações. A necessidade era criar um workflow estruturado que formalizasse pedidos e estabelecesse hierarquia de aprovações.',
-      challenges:[
-        'Arquitetei sistema robusto com Nodemailer, logs de entrega para garantir comunicação eficaz.','Implementei sistema de RBAC (Role-Based Access Control) com middleware de autorização, garantindo que informações sensíveis (como aprovador do pedido) fossem visíveis apenas para níveis hierárquicos apropriados'
+      challenges: [
+        'Arquitetei sistema robusto com Nodemailer, logs de entrega para garantir comunicação eficaz.',
+        'Implementei sistema de RBAC (Role-Based Access Control) com middleware de autorização, garantindo que informações sensíveis (como aprovador do pedido) fossem visíveis apenas para níveis hierárquicos apropriados',
       ],
       results:
         'A solução promoveu uma transformação operacional completa, substituindo processos verbais e informais por um workflow digitalizado, auditável e governado. O reconhecimento institucional foi imediato, com a solução sendo apresentada e aprovada pela matriz, servindo como base para implementação em toda a rede educacional e estabelecendo um novo padrão de processos digitais na organização. Os benefícios mensuráveis incluem a formalização de 100% dos pedidos de compra, controle total de estoque e aprovações, transparência completa no processo decisório e redução drástica de perdas por falta de rastreabilidade. Esta implementação demonstrou como a digitalização estratégica pode gerar impactos significativos tanto operacionais quanto organizacionais, criando valor sustentável para toda a instituição.',
-    },  
+    },
   },
   {
     id: 1,
@@ -132,12 +143,12 @@ export const projectsData: ProjectBody[] = [
       technologies: ['Node.js', 'TypeScript', 'React', 'PostgreSQL', 'Prisma', 'Docker', 'Swagger'],
       context:
         'Desenvolvido para atender demanda específica da gestão escolar: criar um sistema centralizado de identificação fotográfica dos alunos que pudesse exportar dados organizados para outras aplicações institucionais. O objetivo era digitalizar e padronizar o processo de carômetro, facilitando a identificação de estudantes pelos funcionários.',
-      challenges:[
-        'Fotos de alta qualidade geravam PDFs excessivamente pesados, impactando performance e armazenamento.'
+      challenges: [
+        'Fotos de alta qualidade geravam PDFs excessivamente pesados, impactando performance e armazenamento.',
       ],
       results:
         'O sistema está em operação contínua desde sua implementação, sendo usado diariamente pela equipe para identificação de alunos com total estabilidade. A flexibilidade da plataforma permite tanto visualização digital quanto impressão quando necessário. Processo de identificação muito mais eficiente e moderno, que se tornou parte essencial da rotina operacional da instituição.',
-    },  
+    },
   },
   {
     id: 2,
@@ -155,12 +166,24 @@ export const projectsData: ProjectBody[] = [
     skills: ['Node.js', 'Fastify', 'React', 'Prisma', 'Jest', 'PostgreSQL', 'Docker', 'Clean Architecture'],
     more: {
       status: 'Concluído',
-      technologies: ['Node.js', 'TypeScript', 'React', 'PostgreSQL', 'Prisma', 'Docker', 'Jest', 'Nodemailer', 'Swagger'],
+      technologies: [
+        'Node.js',
+        'TypeScript',
+        'React',
+        'PostgreSQL',
+        'Prisma',
+        'Docker',
+        'Jest',
+        'Nodemailer',
+        'Swagger',
+      ],
       context:
         'Desenvolvido sob demanda da direção para modernizar o processo de aquisições institucionais. O sistema anterior baseava-se em comunicação verbal e informal, criando falta de rastreabilidade, controle de estoque deficiente e ausência de governança nas aprovações. A necessidade era criar um workflow estruturado que formalizasse pedidos e estabelecesse hierarquia de aprovações.',
       challenges: [
-        'Implementei sistema de RBAC (Role-Based Access Control) com middleware de autorização, garantindo que informações sensíveis (como aprovador do pedido) fossem visíveis apenas para níveis hierárquicos apropriados',],
-      results:'O projeto transformou completamente a operação, saindo de processos informais e verbais para um sistema digitalizado e rastreável. O impacto foi tão positivo que a matriz adotou a solução como padrão para toda a rede educacional, utilizando o meu projeto como base para uma versão melhorada. Na prática, conseguimos formalizar 100% dos pedidos de compra, ter controle total do estoque e das aprovações, além de eliminar praticamente todas as perdas que aconteciam por falta de rastreabilidade. O resultado foi uma operação muito mais transparente e eficiente para toda a equipe.',
+        'Implementei sistema de RBAC (Role-Based Access Control) com middleware de autorização, garantindo que informações sensíveis (como aprovador do pedido) fossem visíveis apenas para níveis hierárquicos apropriados',
+      ],
+      results:
+        'O projeto transformou completamente a operação, saindo de processos informais e verbais para um sistema digitalizado e rastreável. O impacto foi tão positivo que a matriz adotou a solução como padrão para toda a rede educacional, utilizando o meu projeto como base para uma versão melhorada. Na prática, conseguimos formalizar 100% dos pedidos de compra, ter controle total do estoque e das aprovações, além de eliminar praticamente todas as perdas que aconteciam por falta de rastreabilidade. O resultado foi uma operação muito mais transparente e eficiente para toda a equipe.',
     },
   },
   {
@@ -177,10 +200,15 @@ export const projectsData: ProjectBody[] = [
     skills: ['Node.js', 'React', 'Tailwind CSS', 'PostgreSQL', 'Express', 'Docker'],
     more: {
       status: 'Cancelado',
-      technologies: ['Node.js','Express', 'TypeScript', 'React', 'PostgreSQL', 'Prisma', 'Docker'],
-      context: 'Desenvolvido como extensão natural do bem-sucedido sistema de compras, este projeto surgiu da necessidade organizacional de ter visibilidade completa do inventário antes de aprovar novas aquisições. O objetivo era eliminar compras desnecessárias através de relatórios precisos que mostrassem disponibilidade real de itens em estoque.',
-      challenges: ['Arquitetar a comunicação entre os sistemas de compras e estoque.', 'Evitar a duplicação de dados inseridos no sistema de estoque, evitando erros de análise de dados.'],
-      results: 'O desenvolvimento foi interrompido devido à migração corporativa para sistema padronizado da rede, demonstrando como decisões organizacionais podem impactar projetos técnicos mesmo quando bem arquitetados.',
+      technologies: ['Node.js', 'Express', 'TypeScript', 'React', 'PostgreSQL', 'Prisma', 'Docker'],
+      context:
+        'Desenvolvido como extensão natural do bem-sucedido sistema de compras, este projeto surgiu da necessidade organizacional de ter visibilidade completa do inventário antes de aprovar novas aquisições. O objetivo era eliminar compras desnecessárias através de relatórios precisos que mostrassem disponibilidade real de itens em estoque.',
+      challenges: [
+        'Arquitetar a comunicação entre os sistemas de compras e estoque.',
+        'Evitar a duplicação de dados inseridos no sistema de estoque, evitando erros de análise de dados.',
+      ],
+      results:
+        'O desenvolvimento foi interrompido devido à migração corporativa para sistema padronizado da rede, demonstrando como decisões organizacionais podem impactar projetos técnicos mesmo quando bem arquitetados.',
     },
   },
   {
@@ -199,7 +227,8 @@ export const projectsData: ProjectBody[] = [
         'Implementei arquitetura híbrida com Nginx como proxy reverso, configurando SSL/TLS para acesso seguro via internet. Primeira experiência com Nginx para produção.',
         'Desenvolver um sistema robusto de geração de PDFs com templates consistentes, campos dinâmicos e formatação profissional',
       ],
-      results:'O projeto gerou uma economia significativa de recursos, eliminando cerca de 40 horas de trabalho manual do TI por semestre através da automação completa do processo. Além da economia de tempo, a solução trouxe padronização total dos relatórios, permitindo que os professores se concentrassem no conteúdo pedagógico ao invés da formatação. A alta aceitação pelos usuários resultou em feedback positivo e pedidos constantes de melhorias, levando o sistema a evoluir continuamente. O que começou como relatórios simples por etapa se expandiu para um histórico completo, habilitando trabalho remoto com segurança e gerando documentos com qualidade profissional.',
+      results:
+        'O projeto gerou uma economia significativa de recursos, eliminando cerca de 40 horas de trabalho manual do TI por semestre através da automação completa do processo. Além da economia de tempo, a solução trouxe padronização total dos relatórios, permitindo que os professores se concentrassem no conteúdo pedagógico ao invés da formatação. A alta aceitação pelos usuários resultou em feedback positivo e pedidos constantes de melhorias, levando o sistema a evoluir continuamente. O que começou como relatórios simples por etapa se expandiu para um histórico completo, habilitando trabalho remoto com segurança e gerando documentos com qualidade profissional.',
     },
   },
   {
@@ -214,9 +243,14 @@ export const projectsData: ProjectBody[] = [
       technologies: ['Node.js', 'TypeScript', 'React', 'MariaDB', 'Express', 'JWT', 'Active Directory'],
       context:
         'Desenvolvido para monitorar acessos em um usuário visitante cadastrado no ActiveDirectory, buscando melhorar a segurança da empresa. O sistema foi desenvolvido com Node.js, Express e MariaDB, incluindo sistema de autenticação e autorização.',
-      challenges: ['Desenvolver um sistema robusto de autenticação e autorização.', 'Implementar um sistema de monitoramento de acessos.', 'Promover a comunicação entre os sistemas de monitoramento e autenticação nas máquinas da instituição.'],
-      results: 'O sistema foi desenvolvido com Node.js, Express e MariaDB, incluindo sistema de autenticação e autorização.',
-    }
+      challenges: [
+        'Desenvolver um sistema robusto de autenticação e autorização.',
+        'Implementar um sistema de monitoramento de acessos.',
+        'Promover a comunicação entre os sistemas de monitoramento e autenticação nas máquinas da instituição.',
+      ],
+      results:
+        'O sistema foi desenvolvido com Node.js, Express e MariaDB, incluindo sistema de autenticação e autorização.',
+    },
   },
   {
     id: 6,
@@ -228,9 +262,15 @@ export const projectsData: ProjectBody[] = [
     more: {
       status: 'Concluído',
       technologies: ['React', 'TypeScript'],
-      context: 'Desenvolvido para estudar os conceitos básicos de React e TypeScript, incluindo componentes, props, estados e hooks. O sistema foi desenvolvido com React e TypeScript.',
-      challenges: ['Compreender os conceitos básicos de React e TypeScript.', 'Desenvolver um sistema simples de lista de tarefas.', 'Utilizar o TypeScript para validar os dados inseridos.'],
-      results: 'O sistema foi desenvolvido com React e TypeScript e até hoje utilizo com frequência essa combinação de ferramentas.',
-    }
+      context:
+        'Desenvolvido para estudar os conceitos básicos de React e TypeScript, incluindo componentes, props, estados e hooks. O sistema foi desenvolvido com React e TypeScript.',
+      challenges: [
+        'Compreender os conceitos básicos de React e TypeScript.',
+        'Desenvolver um sistema simples de lista de tarefas.',
+        'Utilizar o TypeScript para validar os dados inseridos.',
+      ],
+      results:
+        'O sistema foi desenvolvido com React e TypeScript e até hoje utilizo com frequência essa combinação de ferramentas.',
+    },
   },
 ]

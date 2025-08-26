@@ -1,4 +1,5 @@
 /** biome-ignore-all lint/suspicious/noArrayIndexKey: <> */
+
 import { ExternalLink, Lightbulb, Target, TrendingUp } from 'lucide-react'
 import { Separator } from '@/Components/ui/separator'
 import type { ProjectBody } from '@/types'
@@ -10,7 +11,7 @@ export function DetailsDialog({ name, more }: { name: string; more: ProjectBody[
   return (
     <Dialog>
       <DialogTrigger className="self-start">
-        <Button  className="text-lg">
+        <Button className="text-lg">
           <ExternalLink size={16} className="mr-2" />
           Saiba mais
         </Button>
@@ -21,7 +22,9 @@ export function DetailsDialog({ name, more }: { name: string; more: ProjectBody[
           <div className="flex items-start justify-between">
             <DialogTitle className="text-2xl font-bold text-left pr-4">{name}</DialogTitle>
             {more.status && (
-              <Badge variant={more.status === 'Concluído' ? 'default' : 'secondary'} className='mr-4'>{more.status}</Badge>
+              <Badge variant={more.status === 'Concluído' ? 'default' : 'secondary'} className="mr-4">
+                {more.status}
+              </Badge>
             )}
           </div>
           {/* <DialogDescription className="text-base leading-relaxed">{more.subTitle}</DialogDescription> */}
@@ -49,7 +52,7 @@ export function DetailsDialog({ name, more }: { name: string; more: ProjectBody[
             <div className="space-y-2 pl-7">
               {more.challenges.map((challenge, index) => (
                 <div key={index} className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 flex-shrink-0" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 shrink-0" />
                   <p className="text-muted-foreground leading-relaxed">{challenge}</p>
                 </div>
               ))}
