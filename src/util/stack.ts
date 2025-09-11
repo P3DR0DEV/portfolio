@@ -5,9 +5,7 @@ export const data: IData[] = [
     title: 'Frontend',
     lang: [
       { name: 'HTML, CSS, JavaScript', skill: 4 },
-      { name: 'TypeScript', skill: 3 },
-      { name: 'ReactJs', skill: 3 },
-      { name: 'NextJs', skill: 1 },
+      { name: 'TypeScript (ReactJs, NextJs)', skill: 3 },
       { name: 'React Native', skill: 1 },
     ],
   },
@@ -23,7 +21,6 @@ export const data: IData[] = [
     title: 'Bancos de Dados',
     lang: [
       { name: 'PostgreSQL', skill: 2 },
-      { name: 'MariaDB', skill: 3 },
       { name: 'MySQL', skill: 3 },
       { name: 'MongoDB', skill: 3 },
       { name: 'Redis', skill: 2 },
