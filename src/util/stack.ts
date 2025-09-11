@@ -4,11 +4,9 @@ export const data: IData[] = [
   {
     title: 'Frontend',
     lang: [
-      { name: 'JavaScript', skill: 3 },
+      { name: 'HTML, CSS, JavaScript', skill: 4 },
+      { name: 'TypeScript', skill: 3 },
       { name: 'ReactJs', skill: 3 },
-      { name: 'HTML', skill: 4 },
-      { name: 'CSS', skill: 3 },
-      { name: 'Tailwind CSS', skill: 3 },
       { name: 'NextJs', skill: 1 },
       { name: 'React Native', skill: 1 },
     ],
@@ -16,19 +14,9 @@ export const data: IData[] = [
   {
     title: 'Backend',
     lang: [
-      { name: 'Node', skill: 2 },
-      { name: 'Express', skill: 3 },
-      { name: 'Fastify', skill: 1 },
-      { name: 'SpringBoot', skill: 1 },
-    ],
-  },
-  {
-    title: 'Linguagens',
-    lang: [
-      { name: 'TypeScript', skill: 3 },
-      { name: 'JavaScript', skill: 3 },
       { name: 'Python', skill: 1 },
-      { name: 'Java', skill: 1 },
+      { name: 'Java (SpringBoot)', skill: 1 },
+      { name: 'Node (Express, Fastify)', skill: 2 },
     ],
   },
   {
@@ -38,6 +26,7 @@ export const data: IData[] = [
       { name: 'MariaDB', skill: 3 },
       { name: 'MySQL', skill: 3 },
       { name: 'MongoDB', skill: 3 },
+      { name: 'Redis', skill: 2 },
     ],
   },
   {
