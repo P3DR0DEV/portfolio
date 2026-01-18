@@ -43,6 +43,7 @@ Neste projeto você encontrará:
 
 ## Estrutura do Projeto
 
+```text
 portfolio/
 ├── components/
 ├── pages/
@@ -50,7 +51,7 @@ portfolio/
 ├── styles/
 ├── README.md
 └── package.json
-
+```
 ---
 
 ## Como Executar o Projeto
